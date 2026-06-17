@@ -1,0 +1,147 @@
+{
+  "version": "tvn-2025",
+  "label": "TVN 2025",
+  "validFrom": "2025-01-01",
+  "validTo": "2025-12-31",
+  "standard": {
+    "groups": {
+      "1": {
+        "stufen": {
+          "1": { "egKey": "1/1", "monatsgehalt": 2632.44, "stundenlohn": 13.21 },
+          "2": { "egKey": "1/2", "monatsgehalt": 2819.78, "stundenlohn": 13.5 },
+          "3": { "egKey": "1/3", "monatsgehalt": 3007.14, "stundenlohn": 13.78 }
+        }
+      },
+      "2": {
+        "stufen": {
+          "1": { "egKey": "2/1", "monatsgehalt": 2901.6, "stundenlohn": 17.56 },
+          "2": { "egKey": "2/2", "monatsgehalt": 3122.68, "stundenlohn": 18.9 },
+          "3": { "egKey": "2/3", "monatsgehalt": 3344.45, "stundenlohn": 20.24 }
+        }
+      },
+      "3": {
+        "stufen": {
+          "1": { "egKey": "3/1", "monatsgehalt": 3023.86, "stundenlohn": 18.3 },
+          "2": { "egKey": "3/2", "monatsgehalt": 3260.41, "stundenlohn": 19.73 },
+          "3": { "egKey": "3/3", "monatsgehalt": 3495.54, "stundenlohn": 21.16 }
+        }
+      },
+      "4": {
+        "stufen": {
+          "1": { "egKey": "4/1", "monatsgehalt": 3182.71, "stundenlohn": 19.6 },
+          "2": { "egKey": "4/2", "monatsgehalt": 3438.92, "stundenlohn": 20.81 },
+          "3": { "egKey": "4/3", "monatsgehalt": 3695.83, "stundenlohn": 22.37 }
+        }
+      },
+      "5": {
+        "stufen": {
+          "1": { "egKey": "5/1", "monatsgehalt": 3246.04, "stundenlohn": 19.65 },
+          "2": { "egKey": "5/2", "monatsgehalt": 3510.08, "stundenlohn": 21.24 },
+          "3": { "egKey": "5/3", "monatsgehalt": 3774.13, "stundenlohn": 22.84 }
+        }
+      },
+      "6": {
+        "stufen": {
+          "1": { "egKey": "6/1", "monatsgehalt": 3329.58, "stundenlohn": 20.15 },
+          "2": { "egKey": "6/2", "monatsgehalt": 3604.06, "stundenlohn": 21.81 },
+          "3": { "egKey": "6/3", "monatsgehalt": 3878.54, "stundenlohn": 23.47 }
+        }
+      },
+      "7": {
+        "stufen": {
+          "1": { "egKey": "7/1", "monatsgehalt": 3512.98, "stundenlohn": 21.26 },
+          "2": { "egKey": "7/2", "monatsgehalt": 3810.68, "stundenlohn": 23.06 },
+          "3": { "egKey": "7/3", "monatsgehalt": 4106.94, "stundenlohn": 24.86 }
+        }
+      },
+      "8": {
+        "stufen": {
+          "1": { "egKey": "8/1", "monatsgehalt": 3659.85, "stundenlohn": 22.15 },
+          "2": { "egKey": "8/2", "monatsgehalt": 3975.83, "stundenlohn": 24.06 },
+          "3": { "egKey": "8/3", "monatsgehalt": 4293.18, "stundenlohn": 25.98 }
+        }
+      },
+      "9": {
+        "stufen": {
+          "1": { "egKey": "9/1", "monatsgehalt": 3917.08, "stundenlohn": 23.71 },
+          "2": { "egKey": "9/2", "monatsgehalt": 4263.23, "stundenlohn": 25.8 },
+          "3": { "egKey": "9/3", "monatsgehalt": 4612.93, "stundenlohn": 27.92 }
+        }
+      }
+    }
+  },
+  "springer": {
+    "groups": {
+      "1": {
+        "stufen": {
+          "1": { "egKey": "1/1", "monatsgehalt": 0, "stundenlohn": 13.45 },
+          "2": { "egKey": "1/2", "monatsgehalt": 0, "stundenlohn": 13.83 },
+          "3": { "egKey": "1/3", "monatsgehalt": 0, "stundenlohn": 14.2 }
+        }
+      },
+      "2": {
+        "stufen": {
+          "1": { "egKey": "2/1", "monatsgehalt": 0, "stundenlohn": 14.35 },
+          "2": { "egKey": "2/2", "monatsgehalt": 0, "stundenlohn": 14.74 },
+          "3": { "egKey": "2/3", "monatsgehalt": 0, "stundenlohn": 15.14 }
+        }
+      },
+      "3": {
+        "stufen": {
+          "1": { "egKey": "3/1", "monatsgehalt": 0, "stundenlohn": 15.29 },
+          "2": { "egKey": "3/2", "monatsgehalt": 0, "stundenlohn": 15.69 },
+          "3": { "egKey": "3/3", "monatsgehalt": 0, "stundenlohn": 16.1 }
+        }
+      },
+      "4": {
+        "stufen": {
+          "1": { "egKey": "4/1", "monatsgehalt": 0, "stundenlohn": 16.34 },
+          "2": { "egKey": "4/2", "monatsgehalt": 0, "stundenlohn": 16.76 },
+          "3": { "egKey": "4/3", "monatsgehalt": 0, "stundenlohn": 17.19 }
+        }
+      },
+      "5": {
+        "stufen": {
+          "1": { "egKey": "5/1", "monatsgehalt": 0, "stundenlohn": 17.54 },
+          "2": { "egKey": "5/2", "monatsgehalt": 0, "stundenlohn": 17.98 },
+          "3": { "egKey": "5/3", "monatsgehalt": 0, "stundenlohn": 18.43 }
+        }
+      },
+      "6": {
+        "stufen": {
+          "1": { "egKey": "6/1", "monatsgehalt": 0, "stundenlohn": 20.15 },
+          "2": { "egKey": "6/2", "monatsgehalt": 0, "stundenlohn": 20.7 },
+          "3": { "egKey": "6/3", "monatsgehalt": 0, "stundenlohn": 21.26 }
+        }
+      },
+      "7": {
+        "stufen": {
+          "1": { "egKey": "7/1", "monatsgehalt": 0, "stundenlohn": 21.71 },
+          "2": { "egKey": "7/2", "monatsgehalt": 0, "stundenlohn": 22.28 },
+          "3": { "egKey": "7/3", "monatsgehalt": 0, "stundenlohn": 22.86 }
+        }
+      },
+      "8": {
+        "stufen": {
+          "1": { "egKey": "8/1", "monatsgehalt": 0, "stundenlohn": 23.43 },
+          "2": { "egKey": "8/2", "monatsgehalt": 0, "stundenlohn": 24.02 },
+          "3": { "egKey": "8/3", "monatsgehalt": 0, "stundenlohn": 24.62 }
+        }
+      },
+      "9": {
+        "stufen": {
+          "1": { "egKey": "9/1", "monatsgehalt": 0, "stundenlohn": 25.23 },
+          "2": { "egKey": "9/2", "monatsgehalt": 0, "stundenlohn": 25.85 },
+          "3": { "egKey": "9/3", "monatsgehalt": 0, "stundenlohn": 26.49 }
+        }
+      },
+      "10": {
+        "stufen": {
+          "1": { "egKey": "10/1", "monatsgehalt": 0, "stundenlohn": 27.15 },
+          "2": { "egKey": "10/2", "monatsgehalt": 0, "stundenlohn": 27.81 },
+          "3": { "egKey": "10/3", "monatsgehalt": 0, "stundenlohn": 28.49 }
+        }
+      }
+    }
+  }
+}

@@ -86,6 +86,834 @@ body::before {
     background: linear-gradient(to right, #0288d1, #00acc1);
     margin-bottom: 16px;
 }
+
+.app-header {
+    background-color: #01579b;
+    color: white;
+    padding: 16px 24px;
+    font-size: 1.35em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.app-subline {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.72em;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.quick-nav {
+    max-width: 900px;
+    margin: 0 auto 18px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.quick-nav a {
+    color: #01579b;
+    background: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 999px;
+    padding: 7px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92em;
+}
+.ui-kapitel {
+    max-width: 900px;
+    margin: 28px auto 10px;
+    padding: 12px 18px;
+    border-left: 6px solid #01579b;
+    background: #eef7fb;
+    color: #0d3342;
+    font-weight: 700;
+    font-size: 1.15em;
+}
+.ui-kapitel small {
+    display: block;
+    margin-top: 4px;
+    color: #546e7a;
+    font-size: 0.78em;
+    font-weight: 400;
+}
+.hinweis-inline {
+    font-size: 0.92em;
+    color: #546e7a;
+    margin: 6px 0 14px;
+}
+.kontrollsummen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+.kontrollsummen-grid .feld {
+    margin-bottom: 0;
+    padding: 10px 12px;
+    background: #ffffff;
+    border: 1px solid #d7e6ef;
+    border-radius: 6px;
+}
+.feld-primaer {
+    background: #e8f5e9 !important;
+    border-color: #a5d6a7 !important;
+}
+.feld-warnung {
+    background: #fff8e1 !important;
+    border-color: #ffe082 !important;
+}
+.technisch {
+    background-color: #f6f8fa !important;
+    border-style: dashed;
+}
+.optional-block {
+    opacity: 0.82;
+}
+.legacy-hinweis {
+    margin-top: 8px;
+    padding: 10px 12px;
+    background: #fff8e1;
+    border-left: 4px solid #f9a825;
+    color: #5d4037;
+    font-size: 0.9em;
+}
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.visually-deemphasized {
+    font-size: 0.92em;
+    color: #607d8b;
+}
+.ui-hidden {
+    display: none !important;
+}
+.modus-band {
+    max-width: 900px;
+    margin: 18px auto;
+    padding: 16px 18px;
+    border-radius: 8px;
+    border: 1px solid #d7e6ef;
+    background: #ffffff;
+}
+.modus-band h2 {
+    margin: 0 0 8px;
+    font-size: 1.22em;
+    color: #0d47a1;
+}
+.modus-band p {
+    margin: 0;
+    color: #546e7a;
+}
+.modus-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+.modus-step {
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #eef7fb;
+    font-weight: 700;
+    color: #0d3342;
+}
+.standardmodus {
+    border-left: 6px solid #0288d1;
+}
+.einfachmodus {
+    border-left: 6px solid #43a047;
+}
+.expertenmodus {
+    max-width: 900px;
+    margin: 16px auto;
+    border: 1px dashed #90a4ae;
+    border-radius: 8px;
+    background: #fbfcfd;
+}
+.expertenmodus > summary {
+    cursor: pointer;
+    padding: 14px 18px;
+    font-weight: 700;
+    color: #263238;
+}
+.expertenmodus > .experteninhalt {
+    padding: 0 18px 18px;
+}
+.expertenmodus .bereich {
+    margin-left: 0;
+    margin-right: 0;
+}
+.jobrad-standard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    align-items: end;
+}
+.jobrad-ergebnis {
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 6px;
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    font-weight: 700;
+}
+.kompakt-hinweis {
+    margin-top: 8px;
+    color: #607d8b;
+    font-size: 0.9em;
+}
+.primary-output {
+    background: #e8f5e9 !important;
+    border: 2px solid #2e7d32;
+}
+.primary-output strong {
+    color: #1b5e20;
+}
+.secondary-output {
+    opacity: 0.78;
+}
+.secondary-output h3::after {
+    content: " – Vorschau";
+    color: #607d8b;
+    font-weight: 400;
+}
+.output-rule-note {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: #eef7fb;
+    border-left: 4px solid #0288d1;
+    color: #37474f;
+    font-size: 0.9em;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background:
+        radial-gradient(circle at top left, rgba(2, 136, 209, 0.10), transparent 34rem),
+        linear-gradient(180deg, #f6f9fc 0%, #eef3f7 100%);
+}
+body > * {
+    order: 40;
+}
+.app-header { order: 1; }
+.quick-nav { order: 2; }
+#modus-einfach { order: 3; }
+#modus-standard { order: 4; }
+.product-action-bar { order: 5; }
+#abzugsBlock { order: 6; }
+#kapitel-stammdaten { order: 10; }
+#eingruppierungBlock { order: 11; }
+#zuschlagssaetzeBlock { order: 12; }
+#kapitel-lohnbestandteile { order: 20; }
+#zuschlaegeBlock { order: 21; }
+#diensteWegeBlock { order: 22; }
+#schichtformBlock { order: 23; }
+#dfBlock { order: 24; }
+#efzBlock { order: 25; }
+#urlaubBlock { order: 26; }
+#zuschlagZusammenfassung { order: 27; }
+#praemienKapitel { order: 30; }
+#praemienBlock { order: 31; }
+#kapitel-sonderabzuege { order: 32; }
+#vlBlock { order: 33; }
+#betriebsrenteBlock { order: 34; }
+#jobradNeuBlock { order: 35; }
+#springerBlock { order: 36; }
+#kapitel-steuer-sv { order: 37; }
+#steuerdatenBlock { order: 38; }
+#kapitel-netto { order: 50; }
+#nettoBlock { order: 51; }
+#debug-kontrollsummen { order: 70; }
+#debug-springer-steuerfrei { order: 71; }
+#modus-experten { order: 72; }
+.footer-actions { order: 90; }
+button[onclick="calculatePayroll()"] {
+    display: none !important;
+}
+.product-action-bar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    max-width: 900px;
+    width: calc(100% - 40px);
+    margin: 10px auto 14px;
+    padding: 14px 18px;
+    border: 1px solid rgba(46, 125, 50, 0.22);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 14px 40px rgba(15, 36, 62, 0.14);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-action-copy {
+    color: #244153;
+    font-weight: 700;
+}
+.engine-status-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.status-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 28px;
+    padding: 0 10px;
+    border-radius: 999px;
+    border: 1px solid #d7e6ef;
+    background: #f7fafc;
+    color: #546e7a;
+    font-size: 0.86em;
+    font-weight: 700;
+}
+.status-chip::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #90a4ae;
+}
+.status-chip.running {
+    border-color: #90caf9;
+    background: #e3f2fd;
+    color: #0d47a1;
+}
+.status-chip.running::before {
+    background: #0288d1;
+    animation: statusPulse 0.8s ease-in-out infinite alternate;
+}
+.status-chip.done {
+    border-color: #a5d6a7;
+    background: #e8f5e9;
+    color: #1b5e20;
+}
+.status-chip.done::before {
+    background: #2e7d32;
+}
+.main-calculate {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 6px;
+    background: #1b5e20;
+    color: #fff;
+    font-size: 1.05em;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(27, 94, 32, 0.22);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+.main-calculate:hover {
+    background: #2e7d32;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 26px rgba(27, 94, 32, 0.28);
+}
+.main-calculate:active {
+    transform: translateY(0);
+}
+.primary-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+.primary-metric {
+    padding: 16px;
+    border: 1px solid rgba(46, 125, 50, 0.18);
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fbfa 100%);
+    box-shadow: 0 10px 24px rgba(15, 36, 62, 0.08);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.primary-metric label {
+    display: block;
+    margin-bottom: 6px;
+    color: #48624a;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.primary-metric strong,
+.primary-metric span {
+    font-size: 1.3em;
+    line-height: 1.2;
+}
+.primary-metric.netto span {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    color: #1b5e20;
+}
+.primary-metric.result-pop {
+    animation: resultPop 0.44s ease-out;
+}
+.primary-output {
+    box-shadow: 0 18px 44px rgba(27, 94, 32, 0.14);
+}
+.secondary-output {
+    border-color: #cfd8dc;
+    background: #f7fafc !important;
+}
+.debug-section,
+.expertenmodus {
+    box-shadow: 0 8px 22px rgba(38, 50, 56, 0.07);
+}
+.secondary-output,
+.technisch,
+.debug-section {
+    color: #455a64;
+}
+.debug-section > summary {
+    max-width: 900px;
+    margin: 16px auto 0;
+}
+.debug-section .ui-kapitel {
+    margin-top: 0;
+}
+.tarif-dropzone {
+    max-width: 420px;
+    padding: 12px;
+    border: 2px dashed #90caf9;
+    border-radius: 6px;
+    background: #f5fbff;
+    color: #0d47a1;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tarif-dropzone.drag-over {
+    background: #e3f2fd;
+    border-color: #0288d1;
+}
+.tarif-import-status {
+    min-height: 1.4em;
+}
+.tarif-import-status.fehler {
+    color: #b71c1c;
+    font-weight: 700;
+}
+.tarif-import-status.erfolg {
+    color: #1b5e20;
+    font-weight: 700;
+}
+.toast-region {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 100000;
+    display: grid;
+    gap: 10px;
+    pointer-events: none;
+}
+.payroll-toast {
+    min-width: min(320px, calc(100vw - 36px));
+    padding: 13px 16px;
+    border-radius: 8px;
+    border: 1px solid #d7e6ef;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 18px 40px rgba(15, 36, 62, 0.20);
+    color: #244153;
+    font-weight: 800;
+    transform: translateY(16px);
+    opacity: 0;
+    animation: toastIn 0.22s ease-out forwards;
+}
+.payroll-toast.success {
+    border-color: #a5d6a7;
+    color: #1b5e20;
+}
+.payroll-toast.info {
+    border-color: #90caf9;
+    color: #0d47a1;
+}
+.payroll-toast.error {
+    border-color: #ef9a9a;
+    color: #b71c1c;
+}
+@keyframes toastIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes resultPop {
+    0% { transform: translateY(8px) scale(0.98); box-shadow: 0 8px 18px rgba(15, 36, 62, 0.07); }
+    100% { transform: translateY(0) scale(1); }
+}
+@keyframes statusPulse {
+    from { opacity: 0.45; transform: scale(0.88); }
+    to { opacity: 1; transform: scale(1.12); }
+}
+
+/* Product UI final layer */
+:root {
+    --color-primary: #0F5FAF;
+    --color-success: #16A34A;
+    --color-warning: #F59E0B;
+    --color-error: #DC2626;
+    --color-bg: #F6F8FB;
+    --color-card: #FFFFFF;
+    --color-border: #E2E8F0;
+    --color-text: #0F172A;
+    --color-muted: #64748B;
+    --shadow-card: 0 12px 30px rgba(15, 23, 42, 0.08);
+    --radius-card: 8px;
+}
+body {
+    display: grid;
+    grid-template-columns: minmax(24px, 1fr) minmax(0, 900px) minmax(320px, 420px) minmax(24px, 1fr);
+    gap: 16px 24px;
+    align-items: start;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+body::before {
+    display: none;
+}
+body > * {
+    grid-column: 2 / 4;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+}
+.app-header {
+    grid-column: 1 / -1;
+    max-width: none;
+    margin: 0;
+    padding: 22px max(32px, calc((100vw - 1400px) / 2 + 32px));
+    background: linear-gradient(135deg, #083D77 0%, var(--color-primary) 100%);
+    box-shadow: 0 10px 28px rgba(15, 95, 175, 0.22);
+}
+.app-subline {
+    color: rgba(255, 255, 255, 0.88);
+}
+.quick-nav {
+    justify-content: center;
+    max-width: 1400px;
+    margin: 4px auto 8px;
+    padding: 0;
+}
+.quick-nav a {
+    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.92);
+    color: #334155;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+.quick-nav a:first-child {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+}
+.modus-band {
+    display: none;
+}
+.bereich,
+.modus-band,
+.expertenmodus,
+.debug-section,
+.product-layout-section,
+.sidebar-card {
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-card) !important;
+    background: var(--color-card) !important;
+    box-shadow: var(--shadow-card) !important;
+}
+.bereich,
+.expertenmodus,
+.debug-section {
+    max-width: none;
+    margin: 0;
+}
+.bereich h3,
+.ui-kapitel,
+.product-layout-section > summary {
+    color: var(--color-text);
+}
+#abzugsBlock {
+    grid-column: 2 / 4;
+    order: 6;
+    padding: 22px;
+    border-color: rgba(22, 163, 74, 0.28) !important;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10) !important;
+}
+#abzugsBlock h3 {
+    font-size: 1.35rem;
+    color: var(--color-text);
+}
+.primary-metrics {
+    grid-template-columns: 1.35fr repeat(3, 1fr);
+    gap: 16px;
+}
+.primary-metric {
+    min-height: 124px;
+    border-color: var(--color-border);
+}
+.primary-metric label {
+    color: #475569;
+}
+.primary-metric span {
+    color: var(--color-text);
+    font-size: clamp(1.35rem, 1.8vw, 1.8rem);
+}
+.primary-metric.netto span {
+    color: var(--color-success);
+    font-size: clamp(2.8rem, 5.2vw, 4.2rem);
+    font-weight: 900;
+    letter-spacing: 0;
+}
+.output-rule-note {
+    border-left-color: var(--color-success);
+    background: #ECFDF5;
+    color: #14532D;
+}
+.product-action-bar {
+    grid-column: 2 / 4;
+    order: 7;
+    top: 12px;
+    justify-content: center;
+    border-color: var(--color-border);
+    background: rgba(255, 255, 255, 0.94);
+}
+.product-action-copy {
+    flex-basis: 100%;
+    text-align: center;
+    color: var(--color-muted);
+}
+.engine-status-row {
+    justify-content: center;
+}
+.status-chip.done {
+    border-color: rgba(22, 163, 74, 0.24);
+    background: #ECFDF5;
+    color: #166534;
+}
+.status-chip.done::before {
+    background: var(--color-success);
+}
+.main-calculate {
+    min-width: min(340px, 100%);
+    min-height: 58px;
+    background: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0;
+    box-shadow: 0 14px 28px rgba(15, 95, 175, 0.28);
+}
+.main-calculate:hover {
+    background: #0A4F93;
+}
+.product-layout-section {
+    grid-column: 2;
+    max-width: none;
+    overflow: hidden;
+}
+.product-layout-section > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+    padding: 18px 22px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.04rem;
+    font-weight: 800;
+}
+.product-layout-section > summary::-webkit-details-marker {
+    display: none;
+}
+.product-layout-section > summary::after {
+    content: "⌄";
+    color: var(--color-muted);
+    font-size: 1.05rem;
+}
+.product-layout-section[open] > summary::after {
+    content: "⌃";
+}
+.product-section-subtitle {
+    display: block;
+    margin-top: 4px;
+    color: var(--color-muted);
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+.product-section-content {
+    padding: 0 18px 18px;
+}
+.product-layout-section .ui-kapitel {
+    display: none;
+}
+.product-layout-section .bereich {
+    border: 1px solid #EEF2F7 !important;
+    box-shadow: none !important;
+    margin: 0 0 12px;
+    padding: 18px;
+}
+.product-layout-section .bereich[style] {
+    background: var(--color-card) !important;
+}
+#inputStammdatenCard { order: 20; }
+#inputZuschlaegeCard { order: 21; }
+#inputSonderCard { order: 22; }
+#inputSteuerSvCard { order: 23; }
+#tarifSidebarCard {
+    grid-column: 3;
+    order: 21;
+}
+.sidebar-card {
+    padding: 18px;
+}
+.sidebar-card h3 {
+    margin: 0 0 14px;
+    color: var(--color-text);
+    font-size: 1.02rem;
+}
+.sidebar-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid #EEF2F7;
+    color: var(--color-muted);
+    font-size: 0.92rem;
+}
+.sidebar-line strong {
+    color: var(--color-text);
+    text-align: right;
+}
+.sidebar-action {
+    width: 100%;
+    margin-top: 14px;
+    min-height: 42px;
+    border: 1px solid rgba(15, 95, 175, 0.22);
+    border-radius: 8px;
+    background: #EFF6FF;
+    color: var(--color-primary);
+    font-weight: 800;
+    cursor: pointer;
+}
+#nettoBlock {
+    grid-column: 3;
+    order: 20;
+    position: sticky;
+    top: 118px;
+    padding: 20px;
+    border-color: var(--color-border) !important;
+    background: #FFFFFF !important;
+    opacity: 1;
+}
+#nettoBlock h3 {
+    color: #475569;
+}
+#nettoErgebnis {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 4px;
+}
+#debug-kontrollsummen,
+#debug-springer-steuerfrei,
+#modus-experten,
+.footer-actions {
+    grid-column: 3;
+}
+#debug-kontrollsummen { order: 24; }
+#debug-springer-steuerfrei { order: 25; }
+#modus-experten { order: 26; }
+.footer-actions {
+    order: 27;
+    margin: 0 !important;
+    border-top: 0 !important;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: #fff;
+    box-shadow: var(--shadow-card);
+}
+.footer-actions button {
+    width: 100%;
+    margin: 6px 0 !important;
+    text-align: left;
+}
+.tarif-dropzone {
+    max-width: none;
+    border-color: var(--color-border);
+    background: #F8FAFC;
+    color: var(--color-primary);
+}
+input[type="number"],
+select,
+input[type="file"] {
+    border-color: var(--color-border);
+    border-radius: 8px;
+    background: #fff;
+}
+input[type="number"]:focus,
+select:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(15, 95, 175, 0.12);
+}
+.toast-region {
+    right: max(18px, calc((100vw - 1400px) / 2 + 18px));
+}
+@media (max-width: 1100px) {
+    body {
+        grid-template-columns: minmax(16px, 1fr) minmax(0, 900px) minmax(16px, 1fr);
+    }
+    body > *,
+    #abzugsBlock,
+    .product-action-bar,
+    .product-layout-section,
+    #nettoBlock,
+    #debug-kontrollsummen,
+    #debug-springer-steuerfrei,
+    #modus-experten,
+    #tarifSidebarCard,
+    .footer-actions {
+        grid-column: 2;
+    }
+    #nettoBlock {
+        position: static;
+        order: 24;
+    }
+    #tarifSidebarCard { order: 25; }
+    #debug-kontrollsummen { order: 70; }
+    #debug-springer-steuerfrei { order: 71; }
+    #modus-experten { order: 72; }
+    .footer-actions { order: 90; }
+    .primary-metrics {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 700px) {
+    body {
+        grid-template-columns: 12px minmax(0, 1fr) 12px;
+        gap: 12px;
+    }
+    .app-header {
+        padding: 18px 16px;
+    }
+    .quick-nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+    .primary-metrics {
+        grid-template-columns: 1fr;
+    }
+    .primary-metric.netto span {
+        font-size: clamp(2.4rem, 14vw, 3.4rem);
+    }
+    .product-action-bar {
+        position: static;
+    }
+    .engine-status-row {
+        justify-content: flex-start;
+    }
+}
 </style>
 <style>
 @media print {
@@ -165,17 +993,70 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("overlayHinweis").style.display = "flex";
 });
 </script>
-<div style="background-color: #01579b; color: white; padding: 12px 24px; font-size: 1.3em; font-weight: bold; font-family: sans-serif;">
-  Rechner für Nettolohn auf Grundlage des TVN-Thüringen
+<div class="app-header">
+  Netto-Lohnrechner TVN Thüringen
+  <span class="app-subline">Eingaben, Brutto-Bausteine, Kontrollsummen und Netto in einem fachlichen Ablauf.</span>
 </div>
+<nav class="quick-nav" aria-label="Schnellnavigation">
+<a href="#kapitel-stammdaten">Eingabe</a>
+<a href="#abzugsBlock">Ergebnis</a>
+<a href="#nettoBlock">Vorschau</a>
+<a href="#modus-experten">Expertenmodus</a>
+</nav>
+<div class="modus-band einfachmodus" id="modus-einfach">
+<h2>Einfacher Modus</h2>
+<p>Für eine schnelle Orientierung: Eingruppierung und typische Lohnbestandteile eintragen, einmal berechnen und das offizielle Netto oben prüfen.</p>
+</div>
+<div class="modus-band standardmodus" id="modus-standard">
+<h2>Standard-Modus</h2>
+<p>Der empfohlene Ablauf für normale Nutzung.</p>
+<div class="modus-steps">
+<div class="modus-step">1. Eingaben</div>
+<div class="modus-step">2. Berechnen</div>
+<div class="modus-step">3. Ergebnis prüfen</div>
+<div class="modus-step">4. Details bei Bedarf öffnen</div>
+</div>
+</div>
+<div class="product-action-bar">
+<div class="product-action-copy">Alle Eingaben werden zentral über die Payroll-Engine berechnet.</div>
+<div class="engine-status-row" aria-label="Berechnungsstatus">
+<span class="status-chip" id="steuerStatus">Steuer bereit</span>
+<span class="status-chip" id="svStatus">SV bereit</span>
+<span class="status-chip" id="jobradStatus">JobRad bereit</span>
+</div>
+<button class="main-calculate" onclick="runPayrollWithFeedback()">Berechnen</button>
+</div>
+<div aria-live="polite" aria-atomic="true" class="toast-region" id="toastRegion"></div>
+<div class="sidebar-card" id="tarifSidebarCard">
+<h3>Tarifinformationen</h3>
+<div class="sidebar-line"><span>Aktive Version</span><strong id="sidebarTarifVersion">–</strong></div>
+<div class="sidebar-line"><span>Tarifquelle</span><strong id="sidebarTarifQuelle">–</strong></div>
+<div class="sidebar-line"><span>Herkunft</span><strong id="sidebarTarifHerkunft">–</strong></div>
+<button class="sidebar-action" onclick="document.getElementById('tarifExcelImport')?.click()">Tarifdaten importieren</button>
+</div>
+<div class="ui-kapitel" id="kapitel-stammdaten">1. Stammdaten und Grundwerte<small>Eingruppierung wählen, daraus Monatsgehalt und Stundenlohn ableiten.</small></div>
 <div class="bereich" id="eingruppierungBlock" style="background-color:#e0f7fa;">
 <h3>Eingruppierung</h3>
 <div class="feld">
+<label for="tarifVersionSelect">Tarifversion:</label>
+<select id="tarifVersionSelect" onchange="wechselTarifVersion()"></select>
+<div class="hinweis-inline">
+<strong>Aktive Tarifversion:</strong> <span id="aktiveTarifVersion">–</span><br/>
+<strong>Tarifquelle:</strong> <span id="aktiveTarifQuelle">–</span><br/>
+<strong>Werte-Herkunft:</strong> <span id="tarifWerteHerkunft">–</span><br/>
+<span id="tarifVersionHinweis">Tarifdaten werden aus der aktiven Version geladen.</span>
+<div id="tarifGovernanceWarnungen"></div>
+</div>
+</div>
+<div class="feld">
+<label for="tarifExcelImport">Excel-Tarifdatei importieren:</label>
+<input accept=".xlsx,.xls,.csv,.tsv" id="tarifExcelImport" onchange="handleTarifExcelImport(this.files && this.files[0])" type="file"/>
+<div class="tarif-dropzone" id="tarifExcelDropzone" onclick="document.getElementById('tarifExcelImport').click()" ondragenter="markiereTarifDropzone(event, true)" ondragover="markiereTarifDropzone(event, true)" ondragleave="markiereTarifDropzone(event, false)" ondrop="handleTarifExcelDrop(event)">Datei hier hineinziehen</div>
+<div class="hinweis-inline tarif-import-status" id="tarifExcelImportStatus"></div>
+</div>
+<div class="feld">
 <label for="egSelect">Bitte Ihre Eingruppierung auswählen:</label>
-<select id="egSelect" onchange="zeigeEingruppierungWerte()">
-<option value="">– bitte auswählen –</option>
-<option value="1/1">1/1</option><option value="1/2">1/2</option><option value="1/3">1/3</option><option value="2/1">2/1</option><option value="2/2">2/2</option><option value="2/3">2/3</option><option value="3/1">3/1</option><option value="3/2">3/2</option><option value="3/3">3/3</option><option value="4/1">4/1</option><option value="4/2">4/2</option><option value="4/3">4/3</option><option value="5/1">5/1</option><option value="5/2">5/2</option><option value="5/3">5/3</option><option value="6/1">6/1</option><option value="6/2">6/2</option><option value="6/3">6/3</option><option value="7/1">7/1</option><option value="7/2">7/2</option><option value="7/3">7/3</option><option value="8/1">8/1</option><option value="8/2">8/2</option><option value="8/3">8/3</option><option value="9/1">9/1</option><option value="9/2">9/2</option><option value="9/3">9/3</option>
-</select>
+<select data-placeholder="– bitte auswählen –" id="egSelect" onchange="zeigeEingruppierungWerte()"></select>
 </div>
 <div class="feld">
 <label>Monatsgehalt:</label>
@@ -194,8 +1075,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="feld"><label>Feiertag (135 %):</label><div class="wertanzeige" id="satzFeiertag">–</div></div>
 <div class="feld"><label>24./31.12 (100 %):</label><div class="wertanzeige" id="satzDez">–</div></div>
 </div>
-<script>
-        const egTabelle = {
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script id="adapter">
+        const legacyEgTabelle = {
             "1/1": [2632.44, 13.21], "1/2": [2819.78, 13.50], "1/3": [3007.14, 13.78],
             "2/1": [2901.60, 17.56], "2/2": [3122.68, 18.90], "2/3": [3344.45, 20.24],
             "3/1": [3023.86, 18.30], "3/2": [3260.41, 19.73], "3/3": [3495.54, 21.16],
@@ -207,14 +1089,933 @@ document.addEventListener("DOMContentLoaded", function() {
             "9/1": [3917.08, 23.71], "9/2": [4263.23, 25.80], "9/3": [4612.93, 27.92]
         };
 
+        const legacySpringerTabelle = {
+            "1/1": 13.45, "1/2": 13.83, "1/3": 14.20,
+            "2/1": 14.35, "2/2": 14.74, "2/3": 15.14,
+            "3/1": 15.29, "3/2": 15.69, "3/3": 16.10,
+            "4/1": 16.34, "4/2": 16.76, "4/3": 17.19,
+            "5/1": 17.54, "5/2": 17.98, "5/3": 18.43,
+            "6/1": 20.15, "6/2": 20.70, "6/3": 21.26,
+            "7/1": 21.71, "7/2": 22.28, "7/3": 22.86,
+            "8/1": 23.43, "8/2": 24.02, "8/3": 24.62,
+            "9/1": 25.23, "9/2": 25.85, "9/3": 26.49,
+            "10/1": 27.15, "10/2": 27.81, "10/3": 28.49
+        };
+
+        function parseEgKey(egKey) {
+            const [gruppe, stufe] = String(egKey || "").split("/");
+            return { gruppe, stufe };
+        }
+
+        function createTarifGroups(flatTable, source = "standard") {
+            return Object.entries(flatTable).reduce((groups, [egKey, rawEntry]) => {
+                const { gruppe, stufe } = parseEgKey(egKey);
+                if (!gruppe || !stufe) return groups;
+
+                const entry = normalizeTarifEntry(egKey, rawEntry, source);
+                if (!entry) return groups;
+
+                if (!groups[gruppe]) {
+                    groups[gruppe] = { stufen: {} };
+                }
+
+                groups[gruppe].stufen[stufe] = {
+                    egKey,
+                    monatsgehalt: entry.monatsgehalt,
+                    stundenlohn: entry.stundenlohn,
+                    zuschlagsbasis: entry.zuschlagsbasis
+                };
+
+                return groups;
+            }, {});
+        }
+
+        const tarifSystem = {
+            activeVersion: "tvn-2025",
+            activeSource: "legacy",
+            lastLoadedVersion: null,
+            sources: {
+                legacy: true,
+                springer: true,
+                external: true,
+                excel: true
+            },
+            versions: {
+                "tvn-2025": {
+                    label: "TVN 2025",
+                    validFrom: "2025-01-01",
+                    validTo: "2025-12-31",
+                    standard: {
+                        groups: createTarifGroups(legacyEgTabelle, "standard")
+                    },
+                    springer: {
+                        groups: createTarifGroups(legacySpringerTabelle, "springer")
+                    },
+                    sourceTracking: {
+                        standard: "legacy",
+                        springer: "legacy"
+                    }
+                },
+                "tvn-2026": {
+                    label: "TVN 2026",
+                    validFrom: "2026-01-01",
+                    validTo: "2026-12-31",
+                    standard: { groups: {} },
+                    springer: { groups: {} },
+                    sourceTracking: {
+                        standard: "empty",
+                        springer: "empty"
+                    }
+                },
+                "tvn-2027": {
+                    label: "TVN 2027",
+                    validFrom: "2027-01-01",
+                    validTo: "2027-12-31",
+                    standard: { groups: {} },
+                    springer: { groups: {} },
+                    sourceTracking: {
+                        standard: "empty",
+                        springer: "empty"
+                    }
+                }
+            }
+        };
+
+        function normalizeTarifEntry(egKey, rawEntry, source = "standard") {
+            if (!rawEntry) {
+                return null;
+            }
+
+            if (Array.isArray(rawEntry)) {
+                const monatsgehalt = Number(rawEntry[0]) || 0;
+                const stundenlohn = Number(rawEntry[1]) || 0;
+                return {
+                    egKey,
+                    monatsgehalt,
+                    stundenlohn,
+                    zuschlagsbasis: stundenlohn,
+                    source
+                };
+            }
+
+            const stundenlohn = Number(rawEntry) || 0;
+            return {
+                egKey,
+                monatsgehalt: 0,
+                stundenlohn,
+                zuschlagsbasis: stundenlohn,
+                source
+            };
+        }
+
+        function isPlainObject(value) {
+            return value !== null && typeof value === "object" && !Array.isArray(value);
+        }
+
+        function isIsoDate(value) {
+            return typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(value));
+        }
+
+        function validateTarifGroups(groups, sectionName, errors) {
+            if (!isPlainObject(groups)) {
+                errors.push(`${sectionName}.groups fehlt oder ist kein Objekt.`);
+                return;
+            }
+
+            Object.entries(groups).forEach(([gruppe, group]) => {
+                if (!isPlainObject(group?.stufen)) {
+                    errors.push(`${sectionName}.groups.${gruppe}.stufen fehlt oder ist kein Objekt.`);
+                    return;
+                }
+
+                Object.entries(group.stufen).forEach(([stufe, entry]) => {
+                    const path = `${sectionName}.groups.${gruppe}.stufen.${stufe}`;
+                    if (!isPlainObject(entry)) {
+                        errors.push(`${path} ist kein Objekt.`);
+                        return;
+                    }
+
+                    const egKey = entry.egKey || `${gruppe}/${stufe}`;
+                    const parsed = parseEgKey(egKey);
+                    if (parsed.gruppe !== String(gruppe) || parsed.stufe !== String(stufe)) {
+                        errors.push(`${path}.egKey passt nicht zu Gruppe/Stufe.`);
+                    }
+
+                    if (!Number.isFinite(Number(entry.monatsgehalt))) {
+                        errors.push(`${path}.monatsgehalt fehlt oder ist keine Zahl.`);
+                    }
+
+                    if (!Number.isFinite(Number(entry.stundenlohn))) {
+                        errors.push(`${path}.stundenlohn fehlt oder ist keine Zahl.`);
+                    }
+                });
+            });
+        }
+
+        function validateTarifCompleteness(tarifData) {
+            const warnings = [];
+            const standardGroups = tarifData.standard?.groups || {};
+            const springerGroups = tarifData.springer?.groups || {};
+            const standardCount = Object.values(standardGroups).reduce((count, group) => count + Object.keys(group.stufen || {}).length, 0);
+            const springerCount = Object.values(springerGroups).reduce((count, group) => count + Object.keys(group.stufen || {}).length, 0);
+
+            if (tarifData.standard && standardCount === 0) {
+                warnings.push("standard enthaelt keine EG-Werte.");
+            }
+
+            if (tarifData.springer && springerCount === 0) {
+                warnings.push("springer enthaelt keine EG-Werte.");
+            }
+
+            if (standardCount > 0 && standardCount < Object.keys(legacyEgTabelle).length) {
+                warnings.push("standard enthaelt weniger EG/Stufen als die Legacy-Referenz.");
+            }
+
+            if (springerCount > 0 && springerCount < Object.keys(legacySpringerTabelle).length) {
+                warnings.push("springer enthaelt weniger EG/Stufen als die Legacy-Referenz.");
+            }
+
+            const versionYear = String(tarifData.version || "").match(/\d{4}/)?.[0];
+            const validFromYear = String(tarifData.validFrom || "").slice(0, 4);
+            if (versionYear && validFromYear && versionYear !== validFromYear) {
+                warnings.push("version und validFrom liegen in unterschiedlichen Jahren.");
+            }
+
+            return warnings;
+        }
+
+        function validateTarifSchema(tarifData) {
+            const errors = [];
+
+            if (!isPlainObject(tarifData)) {
+                return { valid: false, errors: ["Tarifdaten sind kein Objekt."] };
+            }
+
+            if (typeof tarifData.version !== "string" || !tarifData.version.trim()) {
+                errors.push("version fehlt.");
+            }
+
+            if (typeof tarifData.label !== "string" || !tarifData.label.trim()) {
+                errors.push("label fehlt.");
+            }
+
+            if (!isIsoDate(tarifData.validFrom)) {
+                errors.push("validFrom fehlt oder ist kein ISO-Datum.");
+            }
+
+            if (!isIsoDate(tarifData.validTo)) {
+                errors.push("validTo fehlt oder ist kein ISO-Datum.");
+            }
+
+            if (tarifData.standard !== undefined) {
+                validateTarifGroups(tarifData.standard.groups, "standard", errors);
+            }
+
+            if (tarifData.springer !== undefined) {
+                validateTarifGroups(tarifData.springer.groups, "springer", errors);
+            }
+
+            if (tarifData.standard === undefined && tarifData.springer === undefined) {
+                errors.push("Mindestens standard oder springer muss enthalten sein.");
+            }
+
+            return {
+                valid: errors.length === 0,
+                errors,
+                warnings: validateTarifCompleteness(tarifData)
+            };
+        }
+
+        function normalizeExternalGroups(groups, source = "standard") {
+            return Object.entries(groups || {}).reduce((normalizedGroups, [gruppe, group]) => {
+                normalizedGroups[gruppe] = { stufen: {} };
+
+                Object.entries(group.stufen || {}).forEach(([stufe, entry]) => {
+                    const egKey = entry.egKey || `${gruppe}/${stufe}`;
+                    const monatsgehalt = Number(entry.monatsgehalt) || 0;
+                    const stundenlohn = Number(entry.stundenlohn) || 0;
+                    normalizedGroups[gruppe].stufen[stufe] = {
+                        egKey,
+                        monatsgehalt,
+                        stundenlohn,
+                        zuschlagsbasis: Number(entry.zuschlagsbasis ?? entry.stundenlohn) || 0,
+                        source
+                    };
+                });
+
+                return normalizedGroups;
+            }, {});
+        }
+
+        function countTarifEntries(versionKey, source = "standard") {
+            const groups = tarifSystem.versions[versionKey]?.[source]?.groups || {};
+            return Object.values(groups).reduce((count, group) => {
+                return count + Object.keys(group.stufen || {}).length;
+            }, 0);
+        }
+
+        function hasTarifEntries(versionKey, source = "standard") {
+            return countTarifEntries(versionKey, source) > 0;
+        }
+
+        function hasExternalGroups(section) {
+            return Object.values(section?.groups || {}).some(group => Object.keys(group.stufen || {}).length > 0);
+        }
+
+        function getTarifEntrySourceInfo(egKey, source = "standard", versionKey = tarifSystem.activeVersion) {
+            const { gruppe, stufe } = parseEgKey(egKey);
+            const version = tarifSystem.versions[versionKey];
+            const versionEntry = version?.[source]?.groups?.[gruppe]?.stufen?.[stufe];
+
+            if (versionEntry) {
+                const trackedSource = version?.sourceTracking?.[source] || (version?.external?.loaded ? "json" : "legacy");
+                return {
+                    source: trackedSource.startsWith("empty-") ? trackedSource.replace("empty-", "") : trackedSource,
+                    fallback: false,
+                    version: versionKey,
+                    label: trackedSource === "json"
+                        ? "JSON"
+                        : trackedSource === "excel"
+                            ? "Excel"
+                            : "Legacy"
+                };
+            }
+
+            if (tarifSystem.sources.legacy) {
+                const legacyQuelle = source === "springer" ? legacySpringerTabelle : legacyEgTabelle;
+                if (legacyQuelle?.[egKey]) {
+                    return {
+                        source: "legacy",
+                        fallback: true,
+                        version: versionKey,
+                        label: "Legacy-Fallback"
+                    };
+                }
+            }
+
+            return {
+                source: "missing",
+                fallback: false,
+                version: versionKey,
+                label: "Nicht gefunden"
+            };
+        }
+
+        function ermittleTarifGovernance(versionKey = tarifSystem.activeVersion) {
+            const version = tarifSystem.versions[versionKey];
+            const standardCount = countTarifEntries(versionKey, "standard");
+            const springerCount = countTarifEntries(versionKey, "springer");
+            const tracking = version?.sourceTracking || {};
+            const fallbackStandard = standardCount === 0 && tarifSystem.sources.legacy;
+            const fallbackSpringer = springerCount === 0 && tarifSystem.sources.legacy;
+            const hasJsonData = tracking.standard === "json" || tracking.springer === "json";
+            const hasExcelData = tracking.standard === "excel" || tracking.springer === "excel";
+            const hasExternalData = hasJsonData || hasExcelData;
+            const hasLegacyData = tracking.standard === "legacy" || tracking.springer === "legacy";
+            const hasEmptyJson = tracking.standard === "empty-json" || tracking.springer === "empty-json";
+            const hasEmptyExcel = tracking.standard === "empty-excel" || tracking.springer === "empty-excel";
+            const warnings = [];
+
+            let activeSource = "legacy";
+            if (hasExternalData && !hasLegacyData && !fallbackStandard && !fallbackSpringer) {
+                activeSource = hasExcelData && !hasJsonData ? "excel" : "json";
+            } else if (hasExternalData || hasEmptyJson || hasEmptyExcel || fallbackStandard || fallbackSpringer) {
+                activeSource = "merged";
+            }
+
+            if (standardCount === 0 && springerCount === 0) {
+                warnings.push("Aktive Version enthält keine eigenen Tarifwerte.");
+            }
+
+            if (version?.external?.loaded && (standardCount === 0 || springerCount === 0)) {
+                warnings.push("JSON-Tarifdaten sind unvollständig.");
+            }
+
+            (version?.external?.validationWarnings || []).forEach(warning => {
+                warnings.push(warning);
+            });
+
+            if (fallbackStandard || fallbackSpringer) {
+                warnings.push("Legacy-Fallback ist aktiv.");
+            }
+
+            return {
+                versionKey,
+                activeSource,
+                standardCount,
+                springerCount,
+                warnings,
+                external: version?.external || null,
+                sourceLabel: activeSource === "json"
+                    ? `${versionKey} (JSON)`
+                    : activeSource === "excel"
+                        ? `${versionKey} (Excel)`
+                    : activeSource === "merged"
+                        ? "Gemischte Quelle"
+                        : "Legacy"
+            };
+        }
+
+        function aktualisiereAktiveTarifQuelle(versionKey = tarifSystem.activeVersion) {
+            const governance = ermittleTarifGovernance(versionKey);
+            tarifSystem.activeSource = governance.activeSource;
+            return governance;
+        }
+
+        async function loadTarifFromJSON(file) {
+            if (!tarifSystem.sources.external) {
+                throw new Error("Externe Tarifdatenquelle ist deaktiviert.");
+            }
+
+            let rawText;
+            let sourceName = "external";
+
+            if (typeof file === "string") {
+                sourceName = file;
+                const response = await fetch(file);
+                if (!response.ok) {
+                    throw new Error(`Tarifdatei konnte nicht geladen werden: ${file}`);
+                }
+                rawText = await response.text();
+            } else if (file && typeof file.text === "function") {
+                sourceName = file.name || "local-file";
+                rawText = await file.text();
+            } else {
+                throw new Error("loadTarifFromJSON erwartet einen Pfad oder eine File-Instanz.");
+            }
+
+            const tarifData = JSON.parse(rawText);
+            return mergeTarifVersion(tarifData, sourceName);
+        }
+
+        function parseTarifImportNumber(value) {
+            if (typeof value === "number") {
+                return Number.isFinite(value) ? value : NaN;
+            }
+
+            if (typeof value !== "string") {
+                return NaN;
+            }
+
+            const trimmed = value.trim();
+            if (!trimmed || /[a-zA-ZäöüÄÖÜß]/.test(trimmed)) {
+                return NaN;
+            }
+
+            let normalized = trimmed
+                .replace(/\s/g, "")
+                .replace(/€/g, "")
+                .replace(/[^\d,.-]/g, "");
+
+            if (!normalized || normalized === "-" || normalized === "," || normalized === ".") {
+                return NaN;
+            }
+
+            if (normalized.includes(",") && normalized.includes(".")) {
+                normalized = normalized.replace(/\./g, "").replace(",", ".");
+            } else if (normalized.includes(",")) {
+                normalized = normalized.replace(",", ".");
+            }
+
+            const parsed = Number(normalized);
+            return Number.isFinite(parsed) ? parsed : NaN;
+        }
+
+        function istLeereTarifImportZeile(row) {
+            return !Array.isArray(row) || row.every(value => value === null || value === undefined || String(value).trim() === "");
+        }
+
+        function extrahiereTarifImportZahlen(row, typ, erwarteteAnzahl = null) {
+            const alleZahlen = (row || [])
+                .map(parseTarifImportNumber)
+                .filter(value => Number.isFinite(value) && value > 0);
+
+            let zahlen = typ === "monatsgehalt"
+                ? alleZahlen.filter(value => value >= 100)
+                : alleZahlen.filter(value => value < 200);
+
+            if (zahlen.length === 0) {
+                zahlen = alleZahlen;
+            }
+
+            if (erwarteteAnzahl && zahlen.length > erwarteteAnzahl) {
+                zahlen = zahlen.slice(-erwarteteAnzahl);
+            }
+
+            return zahlen;
+        }
+
+        function parseDelimitedTarifRows(text, fileName = "") {
+            const delimiter = fileName.toLowerCase().endsWith(".tsv") ? "\t" : ";";
+            return String(text || "")
+                .split(/\r?\n/)
+                .map(line => line.split(delimiter).map(cell => cell.trim()));
+        }
+
+        function parseTarifRowsToTarifData(rows, sourceName = "Excel Import") {
+            const relevanteZeilen = (rows || []).filter(row => !istLeereTarifImportZeile(row));
+            const groups = {};
+            const warnings = [];
+            const errors = [];
+            let gruppenNummer = 1;
+
+            for (let index = 0; index < relevanteZeilen.length; index += 2) {
+                const monatsZeile = relevanteZeilen[index];
+                const stundenZeile = relevanteZeilen[index + 1];
+
+                if (!stundenZeile) {
+                    warnings.push(`EG ${gruppenNummer}: Stundenlohn-Zeile fehlt.`);
+                    break;
+                }
+
+                const monatsgehaelter = extrahiereTarifImportZahlen(monatsZeile, "monatsgehalt");
+                const stundenloehne = extrahiereTarifImportZahlen(stundenZeile, "stundenlohn", monatsgehaelter.length);
+                const stufenAnzahl = Math.max(monatsgehaelter.length, stundenloehne.length);
+
+                if (monatsgehaelter.length === 0) {
+                    errors.push(`EG ${gruppenNummer}: keine Monatsgehälter gefunden.`);
+                }
+
+                if (stundenloehne.length === 0) {
+                    errors.push(`EG ${gruppenNummer}: keine Stundenlöhne gefunden.`);
+                }
+
+                if (monatsgehaelter.length !== stundenloehne.length) {
+                    warnings.push(`EG ${gruppenNummer}: Anzahl Monatsgehälter (${monatsgehaelter.length}) und Stundenlöhne (${stundenloehne.length}) weicht ab.`);
+                }
+
+                groups[String(gruppenNummer)] = { stufen: {} };
+                for (let stufe = 1; stufe <= stufenAnzahl; stufe += 1) {
+                    const monatsgehalt = monatsgehaelter[stufe - 1];
+                    const stundenlohn = stundenloehne[stufe - 1];
+
+                    if (!Number.isFinite(monatsgehalt) || !Number.isFinite(stundenlohn)) {
+                        warnings.push(`EG ${gruppenNummer}/${stufe}: unvollständiger Wert wurde übersprungen.`);
+                        continue;
+                    }
+
+                    groups[String(gruppenNummer)].stufen[String(stufe)] = {
+                        egKey: `${gruppenNummer}/${stufe}`,
+                        monatsgehalt,
+                        stundenlohn,
+                        zuschlagsbasis: stundenlohn
+                    };
+                }
+
+                if (Object.keys(groups[String(gruppenNummer)].stufen).length === 0) {
+                    delete groups[String(gruppenNummer)];
+                }
+
+                gruppenNummer += 1;
+            }
+
+            if (Object.keys(groups).length === 0) {
+                errors.push("Keine vollständige EG-Gruppe gefunden.");
+            }
+
+            if (errors.length > 0) {
+                throw new Error(errors.join(" "));
+            }
+
+            const aktuellesJahr = new Date().getFullYear();
+            return {
+                version: "import",
+                label: "Excel Import",
+                validFrom: `${aktuellesJahr}-01-01`,
+                validTo: "2099-12-31",
+                standard: { groups },
+                importWarnings: warnings,
+                importSource: sourceName
+            };
+        }
+
+        async function loadTarifFromExcel(file) {
+            if (!tarifSystem.sources.excel) {
+                throw new Error("Excel-Tarifdatenquelle ist deaktiviert.");
+            }
+
+            if (!file) {
+                throw new Error("Keine Tarifdatei ausgewählt.");
+            }
+
+            const fileName = file.name || "tarif-import";
+            let rows;
+
+            if (/\.(csv|tsv)$/i.test(fileName)) {
+                rows = parseDelimitedTarifRows(await file.text(), fileName);
+            } else {
+                if (typeof XLSX === "undefined") {
+                    throw new Error("Excel-Parser konnte nicht geladen werden.");
+                }
+
+                const workbook = XLSX.read(await file.arrayBuffer(), { type: "array" });
+                const firstSheetName = workbook.SheetNames[0];
+                if (!firstSheetName) {
+                    throw new Error("Die Excel-Datei enthält kein Tabellenblatt.");
+                }
+
+                rows = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName], {
+                    header: 1,
+                    raw: true,
+                    defval: null,
+                    blankrows: false
+                });
+            }
+
+            const tarifData = parseTarifRowsToTarifData(rows, fileName);
+            return mergeTarifVersion(tarifData, fileName, "excel");
+        }
+
+        function setTarifImportStatus(message, status = "") {
+            const statusElement = document.getElementById("tarifExcelImportStatus");
+            if (!statusElement) return;
+
+            statusElement.textContent = message || "";
+            statusElement.classList.toggle("fehler", status === "fehler");
+            statusElement.classList.toggle("erfolg", status === "erfolg");
+        }
+
+        async function handleTarifExcelImport(file) {
+            if (!file) return;
+
+            try {
+                setTarifImportStatus("Tarifdatei wird importiert ...");
+                const version = await loadTarifFromExcel(file);
+                tarifSystem.activeVersion = version.version || "import";
+                renderTarifVersionSelect();
+                renderTarifSelects();
+                zeigeEingruppierungWerte();
+                if (typeof setzeSpringerStundenlohn === "function") {
+                    setzeSpringerStundenlohn();
+                }
+                if (typeof calculatePayroll === "function") {
+                    calculatePayroll();
+                }
+
+                const governance = ermittleTarifGovernance(tarifSystem.activeVersion);
+                setTarifImportStatus(`Import abgeschlossen: ${governance.standardCount} EG/Stufen geladen.`, "erfolg");
+            } catch (error) {
+                setTarifImportStatus(error.message || "Tarifimport fehlgeschlagen.", "fehler");
+            }
+        }
+
+        function markiereTarifDropzone(event, active) {
+            event.preventDefault();
+            event.stopPropagation();
+            document.getElementById("tarifExcelDropzone")?.classList.toggle("drag-over", active);
+        }
+
+        function handleTarifExcelDrop(event) {
+            markiereTarifDropzone(event, false);
+            const file = event.dataTransfer?.files?.[0];
+            handleTarifExcelImport(file);
+        }
+
+        function mergeTarifVersion(tarifData, sourceName = "external", sourceType = "json") {
+            const validation = validateTarifSchema(tarifData);
+            if (!validation.valid) {
+                throw new Error(`Ungueltige Tarifdaten: ${validation.errors.join(" ")}`);
+            }
+
+            const externalSourceType = sourceType === "excel" ? "excel" : "json";
+            const versionKey = tarifData.version;
+            const existingVersion = tarifSystem.versions[versionKey] || {
+                standard: { groups: {} },
+                springer: { groups: {} },
+                sourceTracking: {
+                    standard: "empty",
+                    springer: "empty"
+                }
+            };
+            const sourceTracking = {
+                standard: tarifData.standard
+                    ? (hasExternalGroups(tarifData.standard) ? externalSourceType : `empty-${externalSourceType}`)
+                    : existingVersion.sourceTracking?.standard || "empty",
+                springer: tarifData.springer
+                    ? (hasExternalGroups(tarifData.springer) ? externalSourceType : `empty-${externalSourceType}`)
+                    : existingVersion.sourceTracking?.springer || "empty"
+            };
+
+            const mergedVersion = {
+                ...existingVersion,
+                label: tarifData.label || existingVersion.label || versionKey,
+                validFrom: tarifData.validFrom || existingVersion.validFrom,
+                validTo: tarifData.validTo || existingVersion.validTo,
+                standard: tarifData.standard
+                    ? { groups: normalizeExternalGroups(tarifData.standard.groups, "standard") }
+                    : existingVersion.standard,
+                springer: tarifData.springer
+                    ? { groups: normalizeExternalGroups(tarifData.springer.groups, "springer") }
+                    : existingVersion.springer,
+                sourceTracking,
+                external: {
+                    loaded: true,
+                    source: sourceName,
+                    sourceType: externalSourceType,
+                    loadedAt: new Date().toISOString(),
+                    validationWarnings: [...validation.warnings, ...(tarifData.importWarnings || [])]
+                }
+            };
+
+            tarifSystem.versions[versionKey] = mergedVersion;
+            tarifSystem.lastLoadedVersion = versionKey;
+            aktualisiereAktiveTarifQuelle(tarifSystem.activeVersion);
+
+            if (typeof renderTarifVersionSelect === "function") {
+                renderTarifVersionSelect();
+            }
+            if (typeof renderTarifSelects === "function") {
+                renderTarifSelects();
+            }
+
+            return mergedVersion;
+        }
+
+        function getVersionedTarifEntry(egKey, source = "standard", versionKey = tarifSystem.activeVersion) {
+            const { gruppe, stufe } = parseEgKey(egKey);
+            const version = tarifSystem.versions[versionKey];
+            const entry = version?.[source]?.groups?.[gruppe]?.stufen?.[stufe];
+            if (!entry) return null;
+            const sourceInfo = getTarifEntrySourceInfo(egKey, source, versionKey);
+
+            return {
+                egKey,
+                monatsgehalt: Number(entry.monatsgehalt) || 0,
+                stundenlohn: Number(entry.stundenlohn) || 0,
+                zuschlagsbasis: Number(entry.zuschlagsbasis ?? entry.stundenlohn) || 0,
+                source,
+                version: versionKey,
+                dataSource: sourceInfo.source,
+                sourceInfo
+            };
+        }
+
+        function getLegacyTarifEntry(egKey, source = "standard", versionKey = tarifSystem.activeVersion) {
+            const legacyQuelle = source === "springer" ? legacySpringerTabelle : legacyEgTabelle;
+            const entry = normalizeTarifEntry(egKey, legacyQuelle?.[egKey], source);
+            if (!entry) return null;
+
+            return {
+                ...entry,
+                dataSource: "legacy",
+                sourceInfo: {
+                    source: "legacy",
+                    fallback: true,
+                    version: versionKey,
+                    label: "Legacy-Fallback"
+                }
+            };
+        }
+
+        function getTarifEntry(egKey, source = "standard", versionKey = tarifSystem.activeVersion) {
+            return getVersionedTarifEntry(egKey, source, versionKey)
+                || (tarifSystem.sources.legacy ? getLegacyTarifEntry(egKey, source, versionKey) : null);
+        }
+
+        function getMonatsgehalt(egKey, source = "standard") {
+            return getTarifEntry(egKey, source)?.monatsgehalt || 0;
+        }
+
+        function getStundenlohn(egKey, source = "standard") {
+            return getTarifEntry(egKey, source)?.stundenlohn || 0;
+        }
+
+        function getAktuelleEingruppierung() {
+            return document.getElementById("egSelect")?.value || "";
+        }
+
+        function getAktuellesMonatsgehalt() {
+            return getMonatsgehalt(getAktuelleEingruppierung());
+        }
+
+        function getAktuellerStundenlohn() {
+            return getStundenlohn(getAktuelleEingruppierung());
+        }
+
+        function getAktuellerSpringerStundenlohn() {
+            return getStundenlohn(document.getElementById("springerEG")?.value || "", "springer");
+        }
+
+        function listEntgeltgruppen(activeVersion = tarifSystem.activeVersion, source = "standard") {
+            const groups = tarifSystem.versions[activeVersion]?.[source]?.groups || {};
+            const entries = Object.entries(groups).flatMap(([gruppe, group]) =>
+                Object.keys(group.stufen || {}).map(stufe => `${gruppe}/${stufe}`)
+            );
+
+            if (entries.length > 0) {
+                return sortEntgeltgruppen(entries);
+            }
+
+            if (!tarifSystem.sources.legacy) {
+                return [];
+            }
+
+            const legacyQuelle = source === "springer" ? legacySpringerTabelle : legacyEgTabelle;
+            return sortEntgeltgruppen(Object.keys(legacyQuelle));
+        }
+
+        function sortEntgeltgruppen(entries) {
+            return entries.sort((a, b) => {
+                const aKey = parseEgKey(a);
+                const bKey = parseEgKey(b);
+                return (Number(aKey.gruppe) - Number(bKey.gruppe))
+                    || (Number(aKey.stufe) - Number(bKey.stufe));
+            });
+        }
+
+        function renderTarifSelect(selectId, entries, placeholder) {
+            const select = document.getElementById(selectId);
+            if (!select) return;
+
+            const previousValue = select.value;
+            select.innerHTML = "";
+
+            const placeholderOption = document.createElement("option");
+            placeholderOption.value = "";
+            placeholderOption.textContent = placeholder;
+            select.appendChild(placeholderOption);
+
+            entries.forEach(egKey => {
+                const option = document.createElement("option");
+                option.value = egKey;
+                option.textContent = egKey;
+                select.appendChild(option);
+            });
+
+            if (previousValue && entries.includes(previousValue)) {
+                select.value = previousValue;
+            }
+        }
+
+        function listTarifVersionen() {
+            return Object.keys(tarifSystem.versions);
+        }
+
+        function renderTarifVersionSelect() {
+            const select = document.getElementById("tarifVersionSelect");
+            if (!select) return;
+
+            const previousValue = select.value || tarifSystem.activeVersion;
+            select.innerHTML = "";
+
+            listTarifVersionen().forEach(versionKey => {
+                const version = tarifSystem.versions[versionKey];
+                const option = document.createElement("option");
+                option.value = versionKey;
+                option.textContent = `${versionKey} (${version.label || versionKey})`;
+                select.appendChild(option);
+            });
+
+            select.value = listTarifVersionen().includes(previousValue)
+                ? previousValue
+                : tarifSystem.activeVersion;
+        }
+
+        function aktualisiereTarifVersionsAnzeige() {
+            const activeVersionElement = document.getElementById("aktiveTarifVersion");
+            const activeSourceElement = document.getElementById("aktiveTarifQuelle");
+            const originElement = document.getElementById("tarifWerteHerkunft");
+            const hintElement = document.getElementById("tarifVersionHinweis");
+            const warningsElement = document.getElementById("tarifGovernanceWarnungen");
+            const governance = aktualisiereAktiveTarifQuelle(tarifSystem.activeVersion);
+            const egKey = document.getElementById("egSelect")?.value || "";
+            const springerKey = document.getElementById("springerEG")?.value || "";
+            const egEntry = egKey ? getTarifEntry(egKey, "standard") : null;
+            const springerEntry = springerKey ? getTarifEntry(springerKey, "springer") : null;
+
+            if (activeVersionElement) {
+                activeVersionElement.innerText = tarifSystem.activeVersion;
+            }
+
+            if (activeSourceElement) {
+                activeSourceElement.innerText = governance.sourceLabel;
+            }
+
+            if (originElement) {
+                const origins = [];
+                if (egEntry) {
+                    origins.push(`EG ${egKey}: ${egEntry.sourceInfo?.label || egEntry.dataSource || "unbekannt"}`);
+                }
+                if (springerEntry) {
+                    origins.push(`Springer ${springerKey}: ${springerEntry.sourceInfo?.label || springerEntry.dataSource || "unbekannt"}`);
+                }
+                originElement.innerText = origins.length > 0 ? origins.join(" | ") : "Noch keine EG ausgewählt.";
+            }
+
+            if (hintElement) {
+                hintElement.innerText = `Tarifdaten geladen: ${governance.standardCount} EGs, ${governance.springerCount} Springer-EGs.`;
+            }
+
+            if (warningsElement) {
+                warningsElement.innerText = governance.warnings.length > 0
+                    ? `Warnung: ${governance.warnings.join(" ")}`
+                    : "";
+            }
+
+            if (typeof aktualisiereTarifSidebar === "function") {
+                aktualisiereTarifSidebar();
+            }
+        }
+
+        function renderEntgeltgruppenSelect(activeVersion = tarifSystem.activeVersion) {
+            renderTarifSelect(
+                "egSelect",
+                listEntgeltgruppen(activeVersion, "standard"),
+                document.getElementById("egSelect")?.dataset.placeholder || "– bitte auswählen –"
+            );
+        }
+
+        function renderSpringerEntgeltgruppenSelect(activeVersion = tarifSystem.activeVersion) {
+            renderTarifSelect(
+                "springerEG",
+                listEntgeltgruppen(activeVersion, "springer"),
+                document.getElementById("springerEG")?.dataset.placeholder || "Bitte auswählen"
+            );
+        }
+
+        function renderTarifSelects(activeVersion = tarifSystem.activeVersion) {
+            renderEntgeltgruppenSelect(activeVersion);
+            renderSpringerEntgeltgruppenSelect(activeVersion);
+            aktualisiereTarifVersionsAnzeige();
+        }
+
+        function wechselTarifVersion() {
+            const select = document.getElementById("tarifVersionSelect");
+            const nextVersion = select?.value || tarifSystem.activeVersion;
+            if (!tarifSystem.versions[nextVersion]) {
+                renderTarifVersionSelect();
+                return;
+            }
+
+            tarifSystem.activeVersion = nextVersion;
+            renderTarifSelects();
+            zeigeEingruppierungWerte();
+            if (typeof setzeSpringerStundenlohn === "function") {
+                setzeSpringerStundenlohn();
+            }
+            if (typeof calculatePayroll === "function") {
+                calculatePayroll();
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            renderTarifVersionSelect();
+            renderTarifSelects();
+            zeigeEingruppierungWerte();
+            if (typeof setzeSpringerStundenlohn === "function") {
+                setzeSpringerStundenlohn();
+            }
+        });
+
         function zeigeEingruppierungWerte() {
             const auswahl = document.getElementById("egSelect").value;
             const lohnfeld = document.getElementById("stundenlohn");
             const gehaltfeld = document.getElementById("monatsgehalt");
+            const tarif = getTarifEntry(auswahl);
 
-            if (egTabelle[auswahl]) {
-                const gehalt = egTabelle[auswahl][0];
-                const lohn = egTabelle[auswahl][1];
+            if (tarif) {
+                const gehalt = tarif.monatsgehalt;
+                const lohn = tarif.stundenlohn;
                 gehaltfeld.innerText = gehalt.toFixed(2) + " €";
                 lohnfeld.innerText = lohn.toFixed(2) + " €";
 
@@ -232,8 +2033,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("satzFeiertag").innerText = "–";
                 document.getElementById("satzDez").innerText = "–";
             }
+
+            aktualisiereTarifVersionsAnzeige();
         }
-    </script>
+</script>
+<div class="ui-kapitel" id="kapitel-lohnbestandteile">2. Laufende Lohnbestandteile<small>Arbeitszeiten, Zuschläge und laufende Zulagen erfassen.</small></div>
 <div class="bereich" id="zuschlaegeBlock">
 <h3>Zuschläge</h3>
 <div class="feld">
@@ -263,10 +2067,9 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 <script>
 function berechneZuschlaege() {
-    const lohnText = document.getElementById("stundenlohn").innerText.replace(" €", "").replace(",", ".");
-    const stundenlohn = parseFloat(lohnText);
+    const stundenlohn = getAktuellerStundenlohn();
 
-    if (isNaN(stundenlohn)) {
+    if (!stundenlohn) {
         document.getElementById("zuschlagSumme").innerText = "–";
         return;
     }
@@ -418,7 +2221,7 @@ function berechneUrlaubZuschlag() {
 </div>
 <script>
 function berechneZuschlagsGesamtsumme() {
-    const parse = id => parseFloat((document.getElementById(id)?.innerText || "0").replace(" €", "")) || 0;
+    const parse = id => parseFloat((leseElementText(id) || "0").replace(" €", "")) || 0;
 
     const summe =
         parse("zuschlagSumme") +         // Nacht, Samstag, Sonntag, Feiertag, 24./31.12
@@ -431,6 +2234,7 @@ function berechneZuschlagsGesamtsumme() {
     document.getElementById("zuschlagGesamt").innerText = summe.toFixed(2) + " €";
 }
 </script>
+<div class="ui-kapitel" id="praemienKapitel">3. Sonderzahlungen<small>Einmalzahlungen separat erfassen, damit die späteren Kontrollsummen laufend und sonstig trennen können.</small></div>
 <div class="bereich" id="praemienBlock">
 <h3>Prämien &amp; 13. Monatsgehalt</h3>
 <div class="feld">
@@ -454,29 +2258,123 @@ function berechnePraemienBlock() {
     document.getElementById("monats13Betrag").innerText = monats13.toFixed(2) + " €";
 }
 </script>
+<details class="expertenmodus debug-section" id="debug-kontrollsummen">
+<summary>Expertenmodus: Brutto-, Steuer-, ZVK- und SV-Kontrollsummen</summary>
+<div class="experteninhalt">
+<div class="ui-kapitel" id="kapitel-kontrollsummen">Diagnose: Brutto- und Abrechnungsbasen<small>Hier entstehen die fachlichen Kontrollsummen für Brutto, Steuer, ZVK und Sozialversicherung.</small></div>
 <div class="bereich" id="gesamtbruttoBlock" style="background-color:#e0f2ff;">
-<h3>Gesamt-Bruttobetrag</h3>
-<button onclick="berechneGesamtbrutto()" style="background:#4CAF50; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">
-        Brutto berechnen
+<h3>Brutto, Steuerbasis und SV-Basis</h3>
+<p class="hinweis-inline">Diese Übersicht trennt laufende Bezüge, Sonderzahlungen und die daraus abgeleiteten Kontrollsummen. Das ZVK-Brutto wird weiterhin manuell aus der Abrechnung übernommen.</p>
+<button onclick="calculatePayroll()" style="background:#4CAF50; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">
+        Brutto und Kontrollsummen berechnen
     </button>
+<div class="kontrollsummen-grid">
 <div class="feld" style="margin-top:10px;">
-<strong>Gesamtbrutto (Monatsgehalt + Zuschläge):</strong>
+<strong>Laufendes Brutto:</strong>
+<span id="laufendesBrutto">–</span>
+</div>
+<div class="feld">
+<strong>Sonstiger Bezug:</strong>
+<span id="sonstigesBrutto">–</span>
+</div>
+<div class="feld">
+<strong>Steuerpflichtig laufend:</strong>
+<span id="steuerpflichtigLaufend">–</span>
+</div>
+<div class="feld">
+<strong>Laufende Steuerbasis vor ZVK:</strong>
+<span id="laufendeSteuerbasisVorZVK">–</span>
+</div>
+<div class="feld">
+<strong>AN-ZVK (2,4 %):</strong>
+<span id="anZvk">–</span>
+</div>
+<div class="feld">
+<strong>LSt-Brutto laufend:</strong>
+<span id="lstBruttoLaufend">–</span>
+</div>
+<div class="feld">
+<strong>LSt-Brutto sonstig:</strong>
+<span id="lstBruttoSonstig">–</span>
+</div>
+<div class="feld">
+<strong>SV-pflichtiger ZVK-Umlageanteil:</strong>
+<span id="svPflichtigerZvkUmlageanteil">–</span>
+</div>
+<div class="feld">
+<strong>SV-Brutto laufend:</strong>
+<span id="svBruttoLaufend">–</span>
+</div>
+<div class="feld">
+<strong>SV-Brutto Einmalbezug:</strong>
+<span id="svBruttoEinmalbezug">–</span>
+</div>
+<div class="feld">
+<strong>Steuerpflichtig sonstig:</strong>
+<span id="steuerpflichtigSonstig">–</span>
+</div>
+<div class="feld feld-primaer">
+<strong>Gesamtbrutto (laufend + sonstig):</strong>
 <span id="gesamtBrutto">–</span>
+</div>
 </div>
 </div>
 <script>
 function berechneGesamtbrutto() {
     const parse = text => parseFloat(text.replace(" €", "").replace(",", ".")) || 0;
 
-    const zuschlaege = parse(document.getElementById("zuschlagGesamt")?.innerText || "0");
-    const praemie = parse(document.getElementById("praemieBetrag")?.innerText || "0");
-    const monatsgehalt = parse(document.getElementById("monatsgehalt")?.innerText || "0");
+    const zuschlaege = parse(leseElementText("zuschlagGesamt"));
+    const praemie = parse(leseElementText("praemieBetrag"));
+    const monatsgehalt = getAktuellesMonatsgehalt();
 
-    const monats13 = parse(document.getElementById("monats13Betrag")?.innerText || "0");
-    const gesamt = monatsgehalt + zuschlaege + praemie + monats13;
+    const monats13 = parse(leseElementText("monats13Betrag"));
+    const laufendesBrutto = monatsgehalt + zuschlaege;
+    const sonstigesBrutto = praemie + monats13;
+    const gesamt = laufendesBrutto + sonstigesBrutto;
+    const stundenlohn = getAktuellerStundenlohn();
+    const steuerfreiHaupt =
+        (parseFloat(document.getElementById("nachtstunden")?.value) || 0) * stundenlohn * 0.20 +
+        (parseFloat(document.getElementById("sonntagstunden")?.value) || 0) * stundenlohn * 0.30 +
+        (parseFloat(document.getElementById("feiertagstunden")?.value) || 0) * stundenlohn * 1.25 +
+        (parseFloat(document.getElementById("dezstunden")?.value) || 0) * stundenlohn * 1.00;
+    const springerLohn = getAktuellerSpringerStundenlohn();
+    const steuerfreiSpringer =
+        (parseFloat(document.getElementById("springerNacht")?.value) || 0) * springerLohn * 0.20 +
+        (parseFloat(document.getElementById("springerSonntag")?.value) || 0) * springerLohn * 0.30 +
+        (parseFloat(document.getElementById("springerFeiertag")?.value) || 0) * springerLohn * 1.25;
+    const steuerfreiLaufend = steuerfreiHaupt + steuerfreiSpringer;
+    const steuerpflichtigLaufend = Math.max(0, laufendesBrutto - steuerfreiLaufend);
+    const steuerpflichtigSonstig = sonstigesBrutto;
+    const jobradAbzug = parseFloat(document.getElementById("jobradAbzug")?.value) || 0;
+    const jobradAGZuschuss = parseFloat(document.getElementById("jobradAGZuschuss")?.value) || 0;
+    const sachbezugJobrad = parse(leseElementText("sachbezugJobrad"));
+    const vlZuschuss = parse(leseElementText("vlZuschuss"));
+    const laufendeSteuerbasisVorZVK = steuerpflichtigLaufend - jobradAbzug + jobradAGZuschuss + sachbezugJobrad + vlZuschuss;
+    const zvkBrutto = parseFloat(document.getElementById("zvkBrutto")?.value) || 0;
+    const anZvk = zvkBrutto * 0.024;
+    const lstBruttoLaufend = laufendeSteuerbasisVorZVK - anZvk;
+    const lstBruttoSonstig = steuerpflichtigSonstig;
+    const zvkUmlage = zvkBrutto * 0.017;
+    const svPflichtigerZvkUmlageanteil = Math.max(0, zvkUmlage - 13.30);
+    const svBruttoLaufend = laufendeSteuerbasisVorZVK - anZvk + svPflichtigerZvkUmlageanteil;
+    const svBruttoEinmalbezug = steuerpflichtigSonstig;
+    document.getElementById("laufendesBrutto").innerText = laufendesBrutto.toFixed(2) + " €";
+    document.getElementById("sonstigesBrutto").innerText = sonstigesBrutto.toFixed(2) + " €";
+    document.getElementById("steuerpflichtigLaufend").innerText = steuerpflichtigLaufend.toFixed(2) + " €";
+    document.getElementById("laufendeSteuerbasisVorZVK").innerText = laufendeSteuerbasisVorZVK.toFixed(2) + " €";
+    document.getElementById("anZvk").innerText = anZvk.toFixed(2) + " €";
+    document.getElementById("lstBruttoLaufend").innerText = lstBruttoLaufend.toFixed(2) + " €";
+    document.getElementById("lstBruttoSonstig").innerText = lstBruttoSonstig.toFixed(2) + " €";
+    document.getElementById("svPflichtigerZvkUmlageanteil").innerText = svPflichtigerZvkUmlageanteil.toFixed(2) + " €";
+    document.getElementById("svBruttoLaufend").innerText = svBruttoLaufend.toFixed(2) + " €";
+    document.getElementById("svBruttoEinmalbezug").innerText = svBruttoEinmalbezug.toFixed(2) + " €";
+    document.getElementById("steuerpflichtigSonstig").innerText = steuerpflichtigSonstig.toFixed(2) + " €";
     document.getElementById("gesamtBrutto").innerText = gesamt.toFixed(2) + " €";
 }
 </script>
+</div>
+</details>
+<div class="ui-kapitel" id="kapitel-sonderabzuege">5. Sonderthemen und Entgeltumwandlung<small>VL, Betriebsrente, JobRad und Springertätigkeit beeinflussen spätere Zwischenwerte.</small></div>
 <div class="bereich" id="vlBlock">
 <h3>Vermögenswirksame Leistungen (VL)</h3>
 <div class="feld">
@@ -513,19 +2411,19 @@ function aktualisiereVLBetrag() {
         Die Betriebsrente wird auf Basis des Gesamtbruttos <strong>abzüglich VL-Zuschuss</strong> berechnet.<br/>
         Der Abzug beträgt <strong>2,3 %</strong> des bereinigten Bruttos.
     </p>
-<button onclick="berechneBetriebsrente()" style="background:#007B9E; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">
+<button onclick="calculatePayroll()" style="background:#007B9E; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">
         Betriebsrente berechnen
     </button>
 <div class="feld" style="margin-top:10px;">
-<strong>Abzug Betriebsrente:</strong> <span id="betragBetriebsrente">–</span>
+<strong>Abzug Betriebsrente (2,3 %):</strong> <span id="betragBetriebsrente">–</span>
 </div>
 </div>
 <script>
 function berechneBetriebsrente() {
-    const bruttoText = document.getElementById("gesamtBrutto")?.innerText || "0";
+    const bruttoText = leseElementText("gesamtBrutto");
     const brutto = parseFloat(bruttoText.replace(" €", "").replace(",", ".")) || 0;
 
-    const vlZuschussText = document.getElementById("vlZuschuss")?.innerText || "0";
+    const vlZuschussText = leseElementText("vlZuschuss");
     const vlZuschuss = parseFloat(vlZuschussText.replace(" €", "").replace(",", ".")) || 0;
 
     const berechnungsgrundlage = brutto - vlZuschuss;
@@ -535,40 +2433,75 @@ function berechneBetriebsrente() {
 }
 </script>
 <div class="bereich" id="jobradNeuBlock" style="background-color:#e0f7fa;">
-<h3>Jobrad-Leasing (neu aufgebaut)</h3>
-<p style="font-size: 0.9em; color: #555;">
-        Berechnung: Gesamtbrutto – monatlicher Jobrad-Abzug + Arbeitgeberzuschuss
-    </p>
+<span id="kapitel-jobrad"></span>
+<h3>JobRad-Leasing</h3>
+<p class="hinweis-inline">Standardansicht: Rate, Zuschuss und optionalen Kaufpreis eintragen. Die fachlichen Detailwerte bleiben im Expertenbereich erhalten.</p>
+<div class="jobrad-standard-grid">
 <div class="feld">
-<label for="jobradAbzug">Monatlicher Abzug für Jobrad (in €):</label>
+<label for="jobradAbzug">Monatliche Rate:</label>
 <input id="jobradAbzug" step="0.01" title="Monatlicher Abzug für Jobrad-Leasing." type="number" value="0.00"/>
 </div>
 <div class="feld">
-<label for="jobradAGZuschuss">Arbeitgeberzuschuss zum Jobrad (in €):</label>
+<label for="jobradAGZuschuss">Arbeitgeberzuschuss optional:</label>
 <input id="jobradAGZuschuss" step="0.01" title="Arbeitgeberzuschuss zum Jobrad-Leasing." type="number" value="0.00"/>
 </div>
+<div class="feld">
+<label for="kaufpreisJobrad">Kaufpreis optional:</label>
+<input id="kaufpreisJobrad" onchange="berechneJobradSachbezug()" placeholder="z. B. 3000" step="0.01" type="number"/>
+</div>
+</div>
+<button onclick="calculatePayroll()" style="background:#0d47a1; color:white; padding:10px 20px; border:none; border-radius:5px;">
+        JobRad berechnen
+    </button>
+<div class="jobrad-ergebnis">
+<strong>JobRad Nettoeffekt:</strong>
+<span id="jobradNettoEffekt">–</span>
+</div>
+<p class="kompakt-hinweis">Der Nettoeffekt wird isoliert aus Entgeltumwandlung, Steuerwirkung, SV-Wirkung, Sachbezug und Arbeitgeberzuschuss berechnet. Bestehende Brutto-, Steuer-, SV-, ZVK- und Nettofunktionen bleiben unverändert.</p>
+<details class="expertenmodus">
+<summary>JobRad-Details anzeigen</summary>
+<div class="experteninhalt">
+<div class="kontrollsummen-grid">
+<div class="feld">
+<strong>Entgeltumwandlung:</strong>
+<span id="jobradEntgeltumwandlungWert">–</span>
+</div>
+<div class="feld">
+<strong>Arbeitgeberzuschuss:</strong>
+<span id="jobradArbeitgeberzuschussWert">–</span>
+</div>
+<div class="feld">
+<strong>Sachbezug JobRad:</strong>
+<span id="jobradSachbezugEngine">–</span>
+</div>
+<div class="feld">
+<strong>Steuerwirkung:</strong>
+<span id="jobradSteuerwirkung">–</span>
+</div>
+<div class="feld">
+<strong>SV-Wirkung:</strong>
+<span id="jobradSvWirkung">–</span>
+</div>
+<div class="feld technisch">
+<strong>Bestehende JobRad-Basis:</strong>
+<span id="jobradNeuErgebnis">–</span>
+</div>
+</div>
 <div class="block" id="block-jobrad-brutto-mit-sachbezug">
-<h3>Bereinigtes Brutto inkl. Sachbezug (Jobrad)</h3>
-<p><strong>Brutto (inkl. AG-Zuschuss, minus Leasing, plus Sachbezug):</strong>
+<h3>JobRad-Brutto mit Sachbezug</h3>
+<p><strong>Brutto inkl. AG-Zuschuss, Leasingrate und Sachbezug:</strong>
 <span id="jobradBruttoMitSachbezug">0,00 €</span></p>
 </div>
 <div class="block" id="block-jobrad-sachbezug">
-<h3>Kaufpreis Jobrad</h3>
-<label for="kaufpreisJobrad">Kaufpreis Jobrad in €:</label>
-<input id="kaufpreisJobrad" onchange="berechneJobradSachbezug()" placeholder="z. B. 3000" step="0.01" type="number"/>
-<p><strong>Sachbezogen privat (0,25 %):</strong> <span id="sachbezugJobrad">0,00 €</span></p>
+<p><strong>Privater Sachbezug (0,25 %):</strong> <span id="sachbezugJobrad">0,00 €</span></p>
 </div>
-<button onclick="berechneJobradNeu()" style="background:#0d47a1; color:white; padding:10px 20px; border:none; border-radius:5px;">
-        Bereinigtes Brutto berechnen
-    </button>
-<div class="feld" style="margin-top:10px;">
-<strong>Bereinigtes Brutto nach Jobrad-Leasing:</strong>
-<span id="jobradNeuErgebnis">–</span>
+<div style="margin-top:10px;"><label for="jobradMonatlich">JobRad-Rate für die Netto-Zuschussberechnung:</label><input id="jobradMonatlich" placeholder="z. B. 50.00" step="0.01" style="margin-left:10px; padding:4px;" type="number"/></div>
 </div>
-<div style="margin-top:10px;"><label for="jobradMonatlich">Bitte Eintrag der Jobrad-Rate hier nochmals eintragen – dies dient zur Netto-Berechnung.</label><input id="jobradMonatlich" placeholder="z. B. 50.00" step="0.01" style="margin-left:10px; padding:4px;" type="number"/></div></div>
+</details>
+</div>
 <script>
 function berechneJobradNeu() {
-    const bruttoText = document.getElementById("gesamtBrutto")?.innerText || "0";
+    const bruttoText = leseElementText("gesamtBrutto");
     const brutto = parseFloat(bruttoText.replace(" €", "").replace(",", ".")) || 0;
 
     const abzug = parseFloat(document.getElementById("jobradAbzug").value) || 0;
@@ -577,24 +2510,73 @@ function berechneJobradNeu() {
     const bereinigt = brutto - abzug + agZuschuss;
     document.getElementById("jobradNeuErgebnis").innerText = bereinigt.toFixed(2) + " €";
 }
+
+let jobradEngine = {
+    entgeltumwandlung: 0,
+    arbeitgeberzuschuss: 0,
+    sachbezug: 0,
+    steuerwirkung: 0,
+    svWirkung: 0,
+    nettoEffekt: 0
+};
+
+function berechneJobradEngine() {
+    const parseAnzeige = text => parseFloat((text || "0").replace(" €", "").replace(",", ".")) || 0;
+    const runde = wert => Math.round((wert + Number.EPSILON) * 100) / 100;
+
+    const entgeltumwandlung = parseFloat(document.getElementById("jobradAbzug")?.value || "0") || 0;
+    const arbeitgeberzuschuss = parseFloat(document.getElementById("jobradAGZuschuss")?.value || "0") || 0;
+    const kaufpreis = parseFloat(document.getElementById("kaufpreisJobrad")?.value || "0") || 0;
+    const sachbezug = runde(kaufpreis * 0.0025);
+
+    const steuerklasse = document.getElementById("steuerklasse")?.value || "1";
+    const lstBruttoLaufend = parseAnzeige(leseElementText("lstBruttoLaufend"));
+    const steuerDelta = -entgeltumwandlung + arbeitgeberzuschuss + sachbezug;
+    const basisOhneJobrad = Math.max(0, lstBruttoLaufend - steuerDelta);
+    const basisMitJobrad = Math.max(0, lstBruttoLaufend);
+
+    let steuerwirkung = 0;
+    if (typeof berechneJahressteuer === "function") {
+        const steuerOhneJobrad = berechneJahressteuer(basisOhneJobrad * 12, steuerklasse) / 12;
+        const steuerMitJobrad = berechneJahressteuer(basisMitJobrad * 12, steuerklasse) / 12;
+        steuerwirkung = runde(steuerOhneJobrad - steuerMitJobrad);
+    }
+
+    const svDelta = steuerDelta;
+    const svRate = 0.08525 + 0.093 + 0.013 + 0.024;
+    const svWirkung = runde(-svDelta * svRate);
+    const nettoEffekt = runde(-entgeltumwandlung + arbeitgeberzuschuss + steuerwirkung + svWirkung);
+
+    jobradEngine = {
+        entgeltumwandlung: runde(entgeltumwandlung),
+        arbeitgeberzuschuss: runde(arbeitgeberzuschuss),
+        sachbezug,
+        klassifikation: {
+            entgeltumwandlung: { laufendesBrutto: "mindernd", steuerpflichtig: "mindernd", svPflichtig: "mindernd" },
+            arbeitgeberzuschuss: { laufendesBrutto: "erhoehend", steuerpflichtig: true, svPflichtig: true },
+            sachbezug: { laufendesBrutto: "kein Auszahlungsbestandteil", steuerpflichtig: true, svPflichtig: true }
+        },
+        steuerwirkung,
+        svWirkung,
+        nettoEffekt
+    };
+
+    document.getElementById("sachbezugJobrad").innerText = sachbezug.toFixed(2) + " €";
+    document.getElementById("jobradEntgeltumwandlungWert").innerText = jobradEngine.entgeltumwandlung.toFixed(2) + " €";
+    document.getElementById("jobradArbeitgeberzuschussWert").innerText = jobradEngine.arbeitgeberzuschuss.toFixed(2) + " €";
+    document.getElementById("jobradSachbezugEngine").innerText = jobradEngine.sachbezug.toFixed(2) + " €";
+    document.getElementById("jobradSteuerwirkung").innerText = jobradEngine.steuerwirkung.toFixed(2) + " €";
+    document.getElementById("jobradSvWirkung").innerText = jobradEngine.svWirkung.toFixed(2) + " €";
+    document.getElementById("jobradNettoEffekt").innerText = jobradEngine.nettoEffekt.toFixed(2) + " €";
+
+    return jobradEngine;
+}
 </script>
 <div class="bereich" id="springerBlock" style="background-color:#e0f7fa;">
 <h3>Springertätigkeit – Zuschläge aus anderer Eingruppierung</h3>
 <div class="feld">
 <label for="springerEG">Eingruppierung für Springertätigkeit:</label>
-<select id="springerEG" onchange="setzeSpringerStundenlohn()">
-<option value="">Bitte auswählen</option>
-<option value="1/1">1/1</option><option value="1/2">1/2</option><option value="1/3">1/3</option>
-<option value="2/1">2/1</option><option value="2/2">2/2</option><option value="2/3">2/3</option>
-<option value="3/1">3/1</option><option value="3/2">3/2</option><option value="3/3">3/3</option>
-<option value="4/1">4/1</option><option value="4/2">4/2</option><option value="4/3">4/3</option>
-<option value="5/1">5/1</option><option value="5/2">5/2</option><option value="5/3">5/3</option>
-<option value="6/1">6/1</option><option value="6/2">6/2</option><option value="6/3">6/3</option>
-<option value="7/1">7/1</option><option value="7/2">7/2</option><option value="7/3">7/3</option>
-<option value="8/1">8/1</option><option value="8/2">8/2</option><option value="8/3">8/3</option>
-<option value="9/1">9/1</option><option value="9/2">9/2</option><option value="9/3">9/3</option>
-<option value="10/1">10/1</option><option value="10/2">10/2</option><option value="10/3">10/3</option>
-</select>
+<select data-placeholder="Bitte auswählen" id="springerEG" onchange="setzeSpringerStundenlohn()"></select>
 </div>
 <div class="feld">
 <label>Stunden Nachtarbeit:</label>
@@ -612,33 +2594,21 @@ function berechneJobradNeu() {
 <label>Stunden Feiertagsarbeit:</label>
 <input id="springerFeiertag" oninput="berechneSpringerZuschlaege()" step="0.1" title="Feiertagseinsätze als Springer." type="number" value="0"/>
 </div>
-<button onclick="berechneSpringerZuschlaege()" style="background:#d17d00; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">Springerzuschläge berechnen</button>
+<button onclick="calculatePayroll()" style="background:#d17d00; color:white; padding:10px; border:none; border-radius:5px; cursor:pointer;">Springerzuschläge berechnen</button>
 <div class="feld">
 <strong>Springer-Stundenlohn:</strong> <span id="springerStundenlohn"></span></div>
 <div class="feld">
 <strong>Springer-Zuschläge gesamt:</strong> <span id="springerZuschlaege"></span></div>
 </div><script>
-const springerLohnTabelle = {
-  "1/1": 13.45, "1/2": 13.83, "1/3": 14.20,
-  "2/1": 14.35, "2/2": 14.74, "2/3": 15.14,
-  "3/1": 15.29, "3/2": 15.69, "3/3": 16.10,
-  "4/1": 16.34, "4/2": 16.76, "4/3": 17.19,
-  "5/1": 17.54, "5/2": 17.98, "5/3": 18.43,
-  "6/1": 20.15, "6/2": 20.70, "6/3": 21.26,
-  "7/1": 21.71, "7/2": 22.28, "7/3": 22.86,
-  "8/1": 23.43, "8/2": 24.02, "8/3": 24.62,
-  "9/1": 25.23, "9/2": 25.85, "9/3": 26.49,
-  "10/1": 27.15, "10/2": 27.81, "10/3": 28.49
-};
-
 function setzeSpringerStundenlohn() {
   const eg = document.getElementById("springerEG").value;
-  const lohn = springerLohnTabelle[eg] || 0;
+  const lohn = getStundenlohn(eg, "springer");
   document.getElementById("springerStundenlohn").innerText = lohn.toFixed(2);
+  aktualisiereTarifVersionsAnzeige();
 }
 
 function berechneSpringerZuschlaege() {
-  const lohn = parseFloat(document.getElementById("springerStundenlohn").innerText) || 0;
+  const lohn = getAktuellerSpringerStundenlohn();
   const nacht = parseFloat(document.getElementById("springerNacht").value) || 0;
   const sonntag = parseFloat(document.getElementById("springerSonntag").value) || 0;
   const samstag = parseFloat(document.getElementById("springerSamstag").value) || 0;
@@ -648,17 +2618,20 @@ function berechneSpringerZuschlaege() {
   document.getElementById("springerZuschlaege").innerText = summe.toFixed(2);
 }
 </script>
-<div class="bereich" id="springerSteuerfreiBlock" style="background-color:#e0f7fa;">
-<h3>Steuerfreie Springerzuschläge (separat)</h3>
+<details class="expertenmodus debug-section" id="debug-springer-steuerfrei">
+<summary>Expertenmodus: steuerfreie Springerzuschläge</summary>
+<div class="experteninhalt">
+<div class="bereich technisch" id="springerSteuerfreiBlock" style="background-color:#e0f7fa;">
+<h3>Technischer Zwischenwert: steuerfreie Springerzuschläge</h3>
 <p style="font-size: 0.9em; color: #555;">Berechnung erfolgt auf Grundlage des gewählten Springer-Stundenlohns.</p>
-<button onclick="berechneSpringerSteuerfrei()" style="background:#455a64; color:white; padding:10px 20px; border:none; border-radius:5px;">Steuerfreie Anteile berechnen</button>
+<button onclick="calculatePayroll()" style="background:#455a64; color:white; padding:10px 20px; border:none; border-radius:5px;">Steuerfreie Anteile berechnen</button>
 <div class="feld" style="margin-top:10px;">
 <strong>Steuerfreier Springerbetrag (Summe):</strong> <span id="springerSteuerfrei">–</span>
 </div>
 </div>
 <script>
 function berechneSpringerSteuerfrei() {
-  const lohn = parseFloat(document.getElementById("springerStundenlohn").innerText) || 0;
+  const lohn = getAktuellerSpringerStundenlohn();
   const nacht = parseFloat(document.getElementById("springerNacht").value) || 0;
   const sonntag = parseFloat(document.getElementById("springerSonntag").value) || 0;
   const feiertag = parseFloat(document.getElementById("springerFeiertag").value) || 0;
@@ -667,12 +2640,18 @@ function berechneSpringerSteuerfrei() {
   document.getElementById("springerSteuerfrei").innerText = betrag.toFixed(2) + " €";
 }
 </script>
-<div class="bereich" id="bereinigtesBruttoBlock" style="background-color:#e0f7fa;">
-<h3>Bereinigtes Brutto</h3>
+</div>
+</details>
+<details class="expertenmodus" id="modus-experten">
+<summary>Expertenmodus: technische Zwischenwerte anzeigen</summary>
+<div class="experteninhalt">
+<div class="ui-kapitel">6. Technische Zwischenwerte<small>Diese Werte bleiben erhalten, werden im Standardfluss aber ausgeblendet.</small></div>
+<div class="bereich technisch" id="bereinigtesBruttoBlock" style="background-color:#e0f7fa;">
+<h3>Technischer Zwischenwert: Bereinigtes Brutto</h3>
 <p style="font-size: 0.9em; color: #555;">
         Dieser Block summiert alle Zuschläge (inkl. Springertätigkeit) und berechnet das endgültige Bruttogehalt inkl. VL und ggf. Jobrad-Korrektur.
     </p>
-<button onclick="berechneBereinigtesBrutto()" style="background:#2e7d32; color:white; padding:10px 20px; border:none; border-radius:5px;">
+<button onclick="calculatePayroll()" style="background:#2e7d32; color:white; padding:10px 20px; border:none; border-radius:5px;">
         Bereinigtes Brutto berechnen
     </button>
 <div class="feld" style="margin-top:10px;">
@@ -688,35 +2667,35 @@ function berechneSpringerSteuerfrei() {
 function berechneBereinigtesBrutto() {
     const parse = text => parseFloat(text.replace(" €", "").replace(",", ".")) || 0;
 
-    const zuschlagGesamt = parse(document.getElementById("zuschlagGesamt")?.innerText || "0");
-    const springerZuschlag = parse(document.getElementById("springerZuschlaege")?.innerText || "0");
+    const zuschlagGesamt = parse(leseElementText("zuschlagGesamt"));
+    const springerZuschlag = parse(leseElementText("springerZuschlaege"));
     const alleZulagen = zuschlagGesamt + springerZuschlag;
     document.getElementById("gesamtZulagen").innerText = alleZulagen.toFixed(2) + " €";
 
-    const jobradBereinigt = parse(document.getElementById("jobradNeuErgebnis")?.innerText || "0");
+    const jobradBereinigt = parse(leseElementText("jobradNeuErgebnis"));
     const jobradEingetragen = jobradBereinigt > 0;
 
     const bruttoBasis = jobradEingetragen
         ? jobradBereinigt
-        : parse(document.getElementById("gesamtBrutto")?.innerText || "0");
+        : parse(leseElementText("gesamtBrutto"));
 
-    const vlZuschussText = document.getElementById("vlZuschuss")?.innerText || "0";
+    const vlZuschussText = leseElementText("vlZuschuss");
     const vlZuschuss = parse(vlZuschussText);
     const vlOption = document.getElementById("vlOption")?.value || "nein";
     const vlBonus = (vlOption === "ja") ? 7.00 : 0;
 
     const bereinigt = bruttoBasis + vlBonus + springerZuschlag;
 
-    const sachbezugJobrad = parseFloat(document.getElementById("sachbezugJobrad")?.innerText.replace(" €","").replace(",",".") || "0");
+    const sachbezugJobrad = parseFloat(leseElementText("sachbezugJobrad").replace(" €","").replace(",",".") || "0");
 document.getElementById("gesamtBereinigt").innerText = (bereinigt + sachbezugJobrad).toFixed(2) + " €";
 }
 </script>
-<div class="bereich" id="steuerfreiHauptBlock" style="background-color:#e0f7fa;">
-<h3>Steuerfreie Zuschläge – Haupttätigkeit</h3>
+<div class="bereich technisch" id="steuerfreiHauptBlock" style="background-color:#e0f7fa;">
+<h3>Technischer Zwischenwert: steuerfreie Zuschläge</h3>
 <p style="font-size: 0.9em; color: #555;">
         Berechnung basiert auf den Eingaben aus dem regulären Zuschlagsblock.
     </p>
-<button onclick="berechneSteuerfreiHaupt()" style="background:#37474f; color:white; padding:10px 20px; border:none; border-radius:5px;">
+<button onclick="calculatePayroll()" style="background:#37474f; color:white; padding:10px 20px; border:none; border-radius:5px;">
         Steuerfreie Zuschläge berechnen
     </button>
 <div class="feld" style="margin-top:10px;">
@@ -727,7 +2706,7 @@ document.getElementById("gesamtBereinigt").innerText = (bereinigt + sachbezugJob
 <script>
 function berechneSteuerfreiHaupt() {
     const parse = id => parseFloat(document.getElementById(id)?.value) || 0;
-    const lohn = parseFloat(document.getElementById("stundenlohn")?.innerText.replace(" €", "").replace(",", ".")) || 0;
+    const lohn = getAktuellerStundenlohn();
 
     const nacht = parse("nachtstunden");         // 20 %
     const sonntag = parse("sonntagstunden");     // 30 %
@@ -743,12 +2722,12 @@ function berechneSteuerfreiHaupt() {
     document.getElementById("steuerfreiHauptErgebnis").innerText = betrag.toFixed(2) + " €";
 }
 </script>
-<div class="bereich" id="steuerpflichtigBruttoBlock" style="background-color:#e0f7fa;">
-<h3>Steuerpflichtiges Brutto</h3>
+<div class="bereich technisch" id="steuerpflichtigBruttoBlock" style="background-color:#e0f7fa;">
+<h3>Technischer Zwischenwert: altes steuerpflichtiges Brutto</h3>
 <p style="font-size: 0.9em; color: #555;">
         Berechnet sich aus: Bereinigtes Brutto – steuerfreie Hauptzuschläge – steuerfreie Springerzuschläge
     </p>
-<button onclick="berechneSteuerpflichtigBrutto()" style="background:#b71c1c; color:white; padding:10px 20px; border:none; border-radius:5px;">
+<button onclick="calculatePayroll()" style="background:#b71c1c; color:white; padding:10px 20px; border:none; border-radius:5px;">
         Steuerpflichtiges Brutto berechnen
     </button>
 <div class="feld" style="margin-top:10px;">
@@ -760,10 +2739,10 @@ function berechneSteuerfreiHaupt() {
 function berechneSteuerpflichtigBrutto() {
     const parse = text => parseFloat((text || "0").replace(" €", "").replace(",", ".")) || 0;
 
-    const bruttoBereinigt = parse(document.getElementById("gesamtBereinigt")?.innerText || "0");
-    const jobradBereinigt = parse(document.getElementById("jobradNeuErgebnis")?.innerText || "0");
-    const steuerfreiHaupt = parse(document.getElementById("steuerfreiHauptErgebnis")?.innerText || "0");
-    const steuerfreiSpringer = parse(document.getElementById("springerSteuerfrei")?.innerText || "0");
+    const bruttoBereinigt = parse(leseElementText("gesamtBereinigt"));
+    const jobradBereinigt = parse(leseElementText("jobradNeuErgebnis"));
+    const steuerfreiHaupt = parse(leseElementText("steuerfreiHauptErgebnis"));
+    const steuerfreiSpringer = parse(leseElementText("springerSteuerfrei"));
 
     const bruttoVerwendet = jobradBereinigt > 0 ? jobradBereinigt : bruttoBereinigt;
     const steuerpflichtig = Math.max(0, bruttoVerwendet - steuerfreiHaupt - steuerfreiSpringer);
@@ -771,7 +2750,7 @@ function berechneSteuerpflichtigBrutto() {
     document.getElementById("steuerpflichtigBrutto").innerText = steuerpflichtig.toFixed(2) + " €";
 }
 </script>
-<div class="bereich" id="soliBlock">
+<div class="bereich ui-hidden" id="soliBlock">
 <h3>Solidaritätszuschlag – Berücksichtigung</h3>
 <p style="font-size: 0.9em; color: #555;">
     Der Solidaritätszuschlag entfällt in der Regel bei einem Jahresbrutto unter ca. <strong>74.000 €</strong> (für Ledige).
@@ -784,8 +2763,13 @@ function berechneSteuerpflichtigBrutto() {
 <option value="ja">Ja (über 74.000 €/Jahr)</option>
 </select>
 </div>
-</div><div class="bereich" id="steuerdatenBlock">
-<h3>Steuerdaten eingeben</h3>
+</div>
+</div>
+</details>
+<div class="ui-kapitel" id="kapitel-steuer-sv">7. Steuer- und SV-Merkmale<small>Persönliche Merkmale für die Steuer-Engine und die weiterhin vereinfachten SV-Abzüge.</small></div>
+<div class="bereich" id="steuerdatenBlock">
+<h3>Steuermerkmale</h3>
+<p class="hinweis-inline">Diese Angaben steuern die Lohnsteuer-Engine. Bundesland und Kinderfreibeträge bleiben als Eingaben sichtbar, auch wenn einzelne Details erst in späteren Phasen fachlich weiter ausgebaut werden.</p>
 <div class="feld">
 <label for="steuerklasse">Steuerklasse:</label>
 <select id="steuerklasse">
@@ -831,101 +2815,6 @@ function berechneSteuerpflichtigBrutto() {
 <option value="nein">Nein</option>
 </select>
 </div>
-</div><script>
-function berechneNetto() {
-  const parse = id => parseFloat(document.getElementById(id)?.innerText) || 0;
-  const brutto = parse("bereinigtBrutto");
-  const steuerklasse = document.getElementById("steuerklasse")?.value || "1";
-  const kinder = parseFloat(document.getElementById("kinderfreibetrag")?.value) || 0;
-  const kirche = document.getElementById("kirchensteuer")?.value || "nein";
-  const soliStatus = document.getElementById("soliPflicht")?.value || "nein";
-
-  // Beispielhafte einfache Berechnung – Platzhalter
-  let lohnsteuer = brutto * 0.15;
-  let soli = soliStatus === "ja" ? lohnsteuer * 0.055 : 0;
-  let kirchensteuer = kirche === "ja" ? lohnsteuer * 0.09 : 0;
-
-  document.getElementById("lohnsteuer").innerText = lohnsteuer.toFixed(2);
-  document.getElementById("soli").innerText = soli.toFixed(2);
-  document.getElementById("kirchensteuerBetrag").innerText = kirchensteuer.toFixed(2);
-
-  const netto = brutto - lohnsteuer - soli - kirchensteuer;
-  document.getElementById("nettoExakt").innerText = netto.toFixed(2);
-
-  const vlAbzug = parseFloat(document.getElementById("vlGesamt")?.value) || 0;
-  const nettoNachVL = netto - vlAbzug;
-  document.getElementById("nettoNachVL").innerText = nettoNachVL.toFixed(2);
-
-  const betriebsrente = parse("betragBetriebsrente");
-  const nettoNachVLBR = nettoNachVL - betriebsrente;
-  document.getElementById("nettoNachVLBR").innerText = nettoNachVLBR.toFixed(2);
-
-
-}
-</script>
-<div class="bereich" id="nettoBlock">
-<h3>Netto-Berechnung (vereinfacht)</h3><p style="font-size: 0.9em; color: #b71c1c;">Hinweis: In diesem Nettobetrag sind weder vermögenswirksame Leistungen noch die ZVK/Betriebsrente berücksichtigt.</p>
-<p style="font-size: 0.9em; color: #555;">Nimmt pauschale Steuer- und Sozialabgabensätze an.</p>
-<div class="feld">
-<label for="pflegeKinderlos">Pflegeversicherung: kinderlos?</label>
-<select id="pflegeKinderlos">
-<option value="nein">Nein</option>
-<option value="ja">Ja</option>
-</select>
-</div>
-<button onclick="berechneNetto()" style="background:#1b5e20; color:white; padding:10px 20px; border:none; border-radius:5px;">
-        Netto berechnen
-    </button>
-<div class="feld" style="margin-top:10px;">
-<strong>Abzüge insgesamt:</strong> <span id="abzuegeNetto">–</span>
-</div>
-<div class="feld">
-<strong>Netto-Betrag:</strong> <span id="nettoErgebnis">–</span>
-</div>
-</div>
-<script>
-function berechneNetto() {
-    const parse = txt => parseFloat((txt || "0").replace(" €", "").replace(",", ".")) || 0;
-
-    const brutto = parse(document.getElementById("steuerpflichtigBrutto")?.innerText || "0");
-
-    const klasse = document.getElementById("steuerklasse")?.value || "1";
-    const kirche = document.getElementById("kirchensteuer")?.value || "nein";
-    const pflege = document.getElementById("pflegeKinderlos")?.value || "nein";
-    const soli = document.getElementById("soliOption")?.value || "nein";
-
-    // Pauschale Steuerklassensätze
-    const steuerSatz = {
-        "1": 0.14,
-        "2": 0.12,
-        "3": 0.09,
-        "4": 0.13,
-        "5": 0.20,
-        "6": 0.25
-    }[klasse] || 0.14;
-
-    const lohnsteuer = brutto * steuerSatz;
-    const kirchensteuer = (kirche === "ja") ? lohnsteuer * 0.09 : 0;
-    const soliZuschlag = (soli === "ja" && brutto > 6500) ? lohnsteuer * 0.055 : 0;
-
-    // Sozialabgaben
-    const renten = brutto * 0.093;
-    const kranken = brutto * 0.089;
-    const arbeit = brutto * 0.012;
-    const pflegeV = brutto * (pflege === "ja" ? 0.01925 : 0.01525);
-
-    const gesamtAbzug = lohnsteuer + kirchensteuer + soliZuschlag + renten + kranken + arbeit + pflegeV;
-    const netto = brutto - gesamtAbzug;
-
-    document.getElementById("abzuegeNetto").innerText = gesamtAbzug.toFixed(2) + " €";
-    document.getElementById("nettoErgebnis").innerText = netto.toFixed(2) + " €";
-}
-</script>
-<div class="bereich" id="abzugsBlock" style="background-color:#e0f7fa;">
-<h3>Detaillierte Abzüge &amp; endgültiges Netto</h3>
-<p style="font-size: 0.9em; color: #555;">
-        Die Werte basieren auf dem steuerpflichtigen Brutto, VL-Abzug (40 €) und Betriebsrentenwert.
-    </p>
 <div class="feld">
 <label for="pflegeKinderlosFinal">Pflegeversicherung: kinderlos?</label>
 <select id="pflegeKinderlosFinal">
@@ -933,14 +2822,88 @@ function berechneNetto() {
 <option value="ja">Ja</option>
 </select>
 </div>
-<button onclick="berechneAbzuegeDetail()" style="background:#263238; color:white; padding:10px 20px; border:none; border-radius:5px;">
-        Detaillierte Abzüge berechnen
+<div class="feld">
+<label for="pvKinderAnzahlFinal">PV-relevante Kinder:</label>
+<input id="pvKinderAnzahlFinal" min="0" max="5" step="1" title="Anzahl der fuer die Pflegeversicherung beruecksichtigten Kinder." type="number" value="1"/>
+</div>
+<div class="feld">
+<label for="kvZusatzbeitrag">KV-Zusatzbeitrag (%):</label>
+<input id="kvZusatzbeitrag" min="0" step="0.01" title="Kassenindividueller Zusatzbeitrag." type="number" value="2.45"/>
+</div>
+<div class="feld feld-warnung">
+<label for="zvkBrutto">ZVK-Brutto laut Abrechnung:</label>
+<input id="zvkBrutto" min="0" oninput="berechneGesamtbrutto()" step="0.01" title="ZVK-Brutto aus der Abrechnung zur Kontrollrechnung." type="number" value="0.00"/>
+</div>
+</div>
+<div class="ui-kapitel" id="kapitel-netto">8. Netto und Ergebnis<small>Erst die Detailberechnung ist die fachlich relevante Ergebnisfläche.</small></div>
+<div class="bereich optional-block secondary-output" id="nettoBlock">
+<h3>Schnell-Netto</h3><p style="font-size: 0.9em; color: #b71c1c;">Hinweis: Dieser Wert ist nur eine Vorschau und kein offizieller Geschäftsoutput.</p>
+<p style="font-size: 0.9em; color: #555;">Nutzt die neue Steuer-Engine und weiterhin vereinfachte Sozialabgabensätze.</p>
+<div class="feld">
+<label for="pflegeKinderlos">Pflegeversicherung: kinderlos?</label>
+<select id="pflegeKinderlos">
+<option value="nein">Nein</option>
+<option value="ja">Ja</option>
+</select>
+</div>
+<div class="feld">
+<label for="pvKinderAnzahlPreview">PV-relevante Kinder:</label>
+<input id="pvKinderAnzahlPreview" min="0" max="5" step="1" title="Anzahl der fuer die Pflegeversicherung beruecksichtigten Kinder." type="number" value="1"/>
+</div>
+<button onclick="calculatePayroll()" style="background:#1b5e20; color:white; padding:10px 20px; border:none; border-radius:5px;">
+        Netto berechnen
     </button>
+<div class="feld" style="margin-top:10px;">
+<strong>Abzüge insgesamt:</strong> <span id="abzuegeNetto">–</span>
+</div>
+<div class="feld">
+<strong>Vorschau-Netto:</strong> <span id="nettoErgebnis">–</span>
+</div>
+</div>
+<script>
+function berechneNetto() {
+    zeigeNetto(payrollCalculation);
+}
+</script>
+<div class="bereich primary-output" id="abzugsBlock">
+<h3>Offizielles Ergebnis</h3>
+<p style="font-size: 0.9em; color: #555;">
+        Dieser Bereich ist der einzige gültige Geschäftsoutput für Netto, Abzüge, Export und Vergleich.
+    </p>
+<div class="primary-metrics">
+<div class="primary-metric netto">
+<label>Offizielles Netto</label>
+<span id="endNettoErgebnis">–</span>
+</div>
+<div class="primary-metric">
+<label>Auszahlung</label>
+<span id="primaryAuszahlung">–</span>
+</div>
+<div class="primary-metric">
+<label>Gesamtbrutto</label>
+<span id="primaryGesamtbrutto">–</span>
+</div>
+<div class="primary-metric">
+<label>Gesamtabzüge</label>
+<span id="primaryGesamtabzuege">–</span>
+</div>
+</div>
 <div class="feld" style="margin-top:15px;">
 <details>
-<summary><strong>Aufschlüsselung anzeigen</strong></summary>
+<summary><strong>Abzüge und Steuerdetails anzeigen</strong></summary>
+<div class="kontrollsummen-grid">
+<div class="feld">
+<strong>Lohnsteuer laufend:</strong> <span id="lohnsteuerLaufend">–</span>
+</div>
+<div class="feld">
+<strong>Lohnsteuer Sonderzahlung:</strong> <span id="lohnsteuerSonstig">–</span>
+</div>
+<div class="feld">
+<strong>Lohnsteuer gesamt:</strong> <span id="lohnsteuerGesamt">–</span>
+</div>
+</div>
 <ul style="list-style:none; padding-left:0;">
-<li>Lohnsteuer (pauschal): <span id="abzDetailLohnsteuer">–</span></li>
+<li>Lohnsteuer gesamt: <span id="abzDetailLohnsteuer">–</span></li>
 <li>Kirchensteuer: <span id="abzDetailKirche">–</span></li>
 <li>Solizuschlag: <span id="abzDetailSoli">–</span></li>
 <li>Rentenversicherung: <span id="abzDetailRente">–</span></li>
@@ -949,93 +2912,767 @@ function berechneNetto() {
 <li>Pflegeversicherung: <span id="abzDetailPV">–</span></li>
 <li>VL-Abzug (falls „ja“): <span id="abzDetailVL">–</span></li>
 <li>Betriebsrente: <span id="abzDetailRenteBetrieb">–</span></li>
+<li>SV Arbeitnehmer gesamt: <span id="abzDetailSVGesamt">–</span></li>
 </ul>
 </details>
 </div>
-<div class="feld">
-<strong>Endgültiges Netto (vereinfacht):</strong> <span id="endNettoErgebnis">–</span>
-</div>
+<div class="output-rule-note">Schnell-Netto und Diagnosewerte dürfen nicht exportiert, gespeichert oder als Vergleichswert verwendet werden.</div>
 <div style="margin-top:15px; background-color:#fff9c4; padding:12px; border-left:5px solid #fbc02d; font-weight:bold; color:#0d47a1;">Hinweis: In diesem Nettobetrag wurden die steuerfreien Zuschläge aus Haupt- und Springertätigkeit wieder hinzugerechnet.</div></div>
-<script>
-function berechneAbzuegeDetail() {
-    const parse = txt => parseFloat((txt || "0").replace(" €", "").replace(",", ".")) || 0;
+<script id="core-output">
+function rundeCent(wert) {
+    return Math.round((wert + Number.EPSILON) * 100) / 100;
+}
 
-    const bruttoOriginal = parse(document.getElementById("steuerpflichtigBrutto")?.innerText || "0");
-    const bruttoKorrigiert = parse(document.getElementById("steuerpflichtigBruttoKorrigiert")?.innerText || "0");
+function parseEuroWert(text) {
+    return parseFloat((text || "0").replace(" €", "").replace(",", ".")) || 0;
+}
+
+function leseElementText(id) {
+    const element = document.getElementById(id);
+    return element ? (element.textContent || element.innerText || "0") : "0";
+}
+
+function leseEuroWert(id) {
+    return parseEuroWert(leseElementText(id));
+}
+
+let payrollCalculation = null;
+let payrollCalculationRunning = false;
+
+function schreibeEuro(id, wert) {
+    const element = document.getElementById(id);
+    if (element) element.innerText = wert.toFixed(2) + " €";
+}
+
+const SV_PARAMETER_2025 = Object.freeze({
+    kvAllgemein: 0.146,
+    kvZusatzbeitragDefault: 0.0245,
+    rvGesamt: 0.186,
+    avGesamt: 0.026,
+    pvArbeitnehmerBasis: 0.018,
+    pvArbeitnehmerBasisSachsen: 0.023,
+    pvKinderlosZuschlag: 0.006,
+    pvKinderabschlagAbZweitemKind: 0.0025,
+    bbgKvPvMonat: 5512.50,
+    bbgRvAvMonat: 8050.00
+});
+
+const SV_PARAMETER_BY_YEAR = Object.freeze({
+    2025: {
+        ...SV_PARAMETER_2025,
+        jahr: 2025,
+        bbgKvPvJahr: 66150.00,
+        bbgRvAvJahr: 96600.00
+    },
+    2026: {
+        kvAllgemein: 0.146,
+        kvZusatzbeitragDefault: 0.0245,
+        rvGesamt: 0.186,
+        avGesamt: 0.026,
+        pvArbeitnehmerBasis: 0.018,
+        pvArbeitnehmerBasisSachsen: 0.023,
+        pvKinderlosZuschlag: 0.006,
+        pvKinderabschlagAbZweitemKind: 0.0025,
+        bbgKvPvMonat: 5812.50,
+        bbgRvAvMonat: 8450.00,
+        bbgKvPvJahr: 69750.00,
+        bbgRvAvJahr: 101400.00,
+        jahr: 2026
+    }
+});
+
+let svOutput = null;
+
+function ermittleSvParameter(jahr = ermittleSteuerjahr()) {
+    return SV_PARAMETER_BY_YEAR[jahr] || SV_PARAMETER_BY_YEAR[2026] || SV_PARAMETER_BY_YEAR[2025];
+}
+
+function leseProzentInput(id, fallback) {
+    const wert = parseFloat(document.getElementById(id)?.value?.replace(",", ".") || "");
+    return Number.isFinite(wert) ? wert / 100 : fallback;
+}
+
+function lesePvStatus(mode) {
+    const suffix = mode === "preview" ? "Preview" : "Final";
+    const kinderlos = document.getElementById("pflegeKinderlos" + (mode === "preview" ? "" : "Final"))?.value === "ja";
+    const kinderInput = parseInt(document.getElementById("pvKinderAnzahl" + suffix)?.value || "1", 10);
+    const kinderAnzahl = kinderlos ? 0 : Math.max(1, Math.min(5, Number.isFinite(kinderInput) ? kinderInput : 1));
+    return { kinderlos, kinderAnzahl };
+}
+
+function ermittlePvArbeitnehmerSatz(mode, parameter = ermittleSvParameter()) {
+    const bundesland = document.getElementById("bundesland")?.value || "";
+    const basis = bundesland === "SN"
+        ? parameter.pvArbeitnehmerBasisSachsen
+        : parameter.pvArbeitnehmerBasis;
+    const { kinderlos, kinderAnzahl } = lesePvStatus(mode);
+
+    if (kinderlos) {
+        return basis + parameter.pvKinderlosZuschlag;
+    }
+
+    const abschlag = Math.max(0, kinderAnzahl - 1) * parameter.pvKinderabschlagAbZweitemKind;
+    return Math.max(0, basis - abschlag);
+}
+
+function begrenzeBemessung(laufend, einmal, bbgMonat, bbgJahr = bbgMonat * 12) {
+    const laufendBemessen = Math.min(Math.max(0, laufend), bbgMonat);
+    const laufendJahrBemessen = Math.min(laufendBemessen * 12, bbgJahr);
+    const restJahresBbg = Math.max(0, bbgJahr - laufendJahrBemessen);
+    const einmalBemessen = Math.min(Math.max(0, einmal), restJahresBbg);
+    return { laufendBemessen, einmalBemessen, laufendJahrBemessen, restJahresBbg, bbgMonat, bbgJahr };
+}
+
+function berechneSvEngine(mode = "detail") {
+    const jahr = ermittleSteuerjahr();
+    const parameter = ermittleSvParameter(jahr);
+    const svBruttoLaufend = leseEuroWert("svBruttoLaufend");
+    const svBruttoEinmalbezug = leseEuroWert("svBruttoEinmalbezug");
+    const kvZusatzbeitrag = leseProzentInput("kvZusatzbeitrag", parameter.kvZusatzbeitragDefault);
+
+    const kvPvBasis = begrenzeBemessung(svBruttoLaufend, svBruttoEinmalbezug, parameter.bbgKvPvMonat, parameter.bbgKvPvJahr);
+    const rvAvBasis = begrenzeBemessung(svBruttoLaufend, svBruttoEinmalbezug, parameter.bbgRvAvMonat, parameter.bbgRvAvJahr);
+
+    const kvSatzArbeitnehmer = (parameter.kvAllgemein + kvZusatzbeitrag) / 2;
+    const pvSatzArbeitnehmer = ermittlePvArbeitnehmerSatz(mode, parameter);
+    const rvSatzArbeitnehmer = parameter.rvGesamt / 2;
+    const avSatzArbeitnehmer = parameter.avGesamt / 2;
+
+    const output = {
+        kvLaufend: rundeCent(kvPvBasis.laufendBemessen * kvSatzArbeitnehmer),
+        pvLaufend: rundeCent(kvPvBasis.laufendBemessen * pvSatzArbeitnehmer),
+        rvLaufend: rundeCent(rvAvBasis.laufendBemessen * rvSatzArbeitnehmer),
+        avLaufend: rundeCent(rvAvBasis.laufendBemessen * avSatzArbeitnehmer),
+
+        kvEinmal: rundeCent(kvPvBasis.einmalBemessen * kvSatzArbeitnehmer),
+        pvEinmal: rundeCent(kvPvBasis.einmalBemessen * pvSatzArbeitnehmer),
+        rvEinmal: rundeCent(rvAvBasis.einmalBemessen * rvSatzArbeitnehmer),
+        avEinmal: rundeCent(rvAvBasis.einmalBemessen * avSatzArbeitnehmer)
+    };
+
+    output.svGesamtArbeitnehmer = rundeCent(
+        output.kvLaufend + output.pvLaufend + output.rvLaufend + output.avLaufend +
+        output.kvEinmal + output.pvEinmal + output.rvEinmal + output.avEinmal
+    );
+
+    output.bemessung = Object.freeze({
+        svBruttoLaufend,
+        svBruttoEinmalbezug,
+        jahr,
+        kvPvLaufend: kvPvBasis.laufendBemessen,
+        kvPvEinmal: kvPvBasis.einmalBemessen,
+        rvAvLaufend: rvAvBasis.laufendBemessen,
+        rvAvEinmal: rvAvBasis.einmalBemessen,
+        kvPvRestJahresBbg: kvPvBasis.restJahresBbg,
+        rvAvRestJahresBbg: rvAvBasis.restJahresBbg,
+        bbgKvPvMonat: parameter.bbgKvPvMonat,
+        bbgKvPvJahr: parameter.bbgKvPvJahr,
+        bbgRvAvMonat: parameter.bbgRvAvMonat,
+        bbgRvAvJahr: parameter.bbgRvAvJahr,
+        kvSatzArbeitnehmer,
+        pvSatzArbeitnehmer,
+        rvSatzArbeitnehmer,
+        avSatzArbeitnehmer
+    });
+
+    if (mode === "detail") svOutput = output;
+    return output;
+}
+
+function ermittleKirchensteuerSatz() {
+    const kirche = document.getElementById("kirchensteuer")?.value || "nein";
+    if (kirche !== "ja") return 0;
+
+    const bundesland = document.getElementById("bundesland")?.value || "";
+    return (bundesland === "BY" || bundesland === "BW") ? 0.08 : 0.09;
+}
+
+function berechneKirchensteuer(lohnsteuer) {
+    return lohnsteuer * ermittleKirchensteuerSatz();
+}
+
+const SOLI_PARAMETER = Object.freeze({
+    2025: {
+        freigrenzeJahressteuer: 19950,
+        soliSatz: 0.055,
+        milderungsSatz: 0.119,
+        kinderfreibetragJeZaehler: 9600
+    },
+    2026: {
+        freigrenzeJahressteuer: 20350,
+        soliSatz: 0.055,
+        milderungsSatz: 0.119,
+        kinderfreibetragJeZaehler: 9756
+    }
+});
+
+function ermittleSteuerjahr() {
+    const versionYear = String(tarifSystem?.versions?.[tarifSystem.activeVersion]?.validFrom || "").slice(0, 4);
+    const jahr = parseInt(versionYear, 10);
+    return Number.isFinite(jahr) ? jahr : new Date().getFullYear();
+}
+
+function leseKinderfreibetraege() {
+    const wert = parseFloat(document.getElementById("kinderfreibetrag")?.value?.replace(",", ".") || "0");
+    return Number.isFinite(wert) ? Math.max(0, wert) : 0;
+}
+
+function ermittleSoliParameter(jahr = ermittleSteuerjahr()) {
+    return SOLI_PARAMETER[jahr] || SOLI_PARAMETER[2026] || SOLI_PARAMETER[2025];
+}
+
+function berechneJahresSoliAusSteuer(jahressteuer, jahr = ermittleSteuerjahr()) {
+    const parameter = ermittleSoliParameter(jahr);
+    const bemessungssteuer = Math.max(0, jahressteuer);
+    if (bemessungssteuer <= parameter.freigrenzeJahressteuer) {
+        return 0;
+    }
+
+    const vollerSoli = bemessungssteuer * parameter.soliSatz;
+    const milderungsSoli = (bemessungssteuer - parameter.freigrenzeJahressteuer) * parameter.milderungsSatz;
+    return rundeCent(Math.min(vollerSoli, milderungsSoli));
+}
+
+function berechneJahressteuerFuerSoli(jahresBrutto, steuerklasse, jahr = ermittleSteuerjahr()) {
+    const parameter = ermittleSoliParameter(jahr);
+    const kinderfreibetraege = leseKinderfreibetraege();
+    const bruttoNachKinderfreibetrag = Math.max(0, jahresBrutto - kinderfreibetraege * parameter.kinderfreibetragJeZaehler);
+    return berechneJahressteuer(bruttoNachKinderfreibetrag, steuerklasse);
+}
+
+function berechneSoliEngine(steuerEngine) {
+    const steuerklasse = document.getElementById("steuerklasse")?.value || "1";
+    const jahr = ermittleSteuerjahr();
+    const lstBruttoLaufend = leseEuroWert("lstBruttoLaufend");
+    const lstBruttoSonstig = leseEuroWert("lstBruttoSonstig");
+    const jahresBruttoLaufend = lstBruttoLaufend * 12;
+
+    const jahressteuerOhneSonderzahlung = berechneJahressteuerFuerSoli(jahresBruttoLaufend, steuerklasse, jahr);
+    const jahressteuerMitSonderzahlung = berechneJahressteuerFuerSoli(jahresBruttoLaufend + lstBruttoSonstig, steuerklasse, jahr);
+    const jahresSoliOhneSonderzahlung = berechneJahresSoliAusSteuer(jahressteuerOhneSonderzahlung, jahr);
+    const jahresSoliMitSonderzahlung = berechneJahresSoliAusSteuer(jahressteuerMitSonderzahlung, jahr);
+
+    const soliLaufend = rundeCent(jahresSoliOhneSonderzahlung / 12);
+    const soliSonstig = rundeCent(Math.max(0, jahresSoliMitSonderzahlung - jahresSoliOhneSonderzahlung));
+    const soliGesamt = rundeCent(soliLaufend + soliSonstig);
+
+    return {
+        jahr,
+        kinderfreibetraege: leseKinderfreibetraege(),
+        lohnsteuerGesamt: steuerEngine?.lohnsteuerGesamt || 0,
+        jahressteuerOhneSonderzahlung,
+        jahressteuerMitSonderzahlung,
+        jahresSoliOhneSonderzahlung,
+        jahresSoliMitSonderzahlung,
+        soliLaufend,
+        soliSonstig,
+        soliGesamt
+    };
+}
+
+function berechneNettoWerte(steuerEngine, svEngineOutput = berechneSvEngine("preview")) {
+    const brutto = leseEuroWert("steuerpflichtigBrutto");
+
+    const lohnsteuer = steuerEngine.lohnsteuerGesamt;
+    const kirchensteuer = berechneKirchensteuer(lohnsteuer);
+    const soliEngine = berechneSoliEngine(steuerEngine);
+    const soliZuschlag = soliEngine.soliGesamt;
+
+    const renten = svEngineOutput.rvLaufend + svEngineOutput.rvEinmal;
+    const kranken = svEngineOutput.kvLaufend + svEngineOutput.kvEinmal;
+    const arbeit = svEngineOutput.avLaufend + svEngineOutput.avEinmal;
+    const pflegeV = svEngineOutput.pvLaufend + svEngineOutput.pvEinmal;
+
+    const gesamtAbzug = lohnsteuer + kirchensteuer + soliZuschlag + renten + kranken + arbeit + pflegeV;
+    const netto = brutto - gesamtAbzug;
+
+    return { brutto, lohnsteuer, kirchensteuer, soliZuschlag, soliEngine, renten, kranken, arbeit, pflegeV, svEngineOutput, gesamtAbzug, netto };
+}
+
+function zeigeNetto(ergebnis) {
+    if (!ergebnis?.netto) return;
+    schreibeEuro("abzuegeNetto", ergebnis.netto.gesamtAbzug);
+    schreibeEuro("nettoErgebnis", ergebnis.netto.netto);
+}
+
+function berechneAbzuegeDetailWerte(steuerEngine, svEngineOutput = berechneSvEngine("detail")) {
+    const bruttoOriginal = leseEuroWert("steuerpflichtigBrutto");
+    const bruttoKorrigiert = leseEuroWert("steuerpflichtigBruttoKorrigiert");
     const bruttoLohnsteuer = bruttoKorrigiert > 0 ? bruttoKorrigiert : bruttoOriginal;
     const bruttoSozial = bruttoOriginal;
-
-    const klasse = document.getElementById("steuerklasse")?.value || "1";
-    const kirche = document.getElementById("kirchensteuer")?.value || "nein";
-    const soli = document.getElementById("soliOption")?.value || "nein";
-    const pflege = document.getElementById("pflegeKinderlosFinal")?.value || "nein";
 
     const vlOption = document.getElementById("vlOption")?.value || "nein";
     let vlEingabe = parseFloat(document.getElementById("vlGesamt")?.value || "0");
     if (vlOption === "ja" && (isNaN(vlEingabe) || vlEingabe <= 0)) vlEingabe = 7.00;
 
-    const renteBetrieb = parse(document.getElementById("betragBetriebsrente")?.innerText || "0");
+    const renteBetrieb = leseEuroWert("betragBetriebsrente");
+    const lohnsteuer = steuerEngine.lohnsteuerGesamt;
+    const kirchensteuer = berechneKirchensteuer(lohnsteuer);
+    const soliEngine = berechneSoliEngine(steuerEngine);
+    const soliZuschlag = soliEngine.soliGesamt;
 
-    const steuerSatz = {
-        "1": 0.14, "2": 0.12, "3": 0.09,
-        "4": 0.13, "5": 0.20, "6": 0.25
-    }[klasse] || 0.14;
-
-    const lohnsteuer = bruttoLohnsteuer * steuerSatz;
-    const kirchensteuer = (kirche === "ja") ? lohnsteuer * 0.09 : 0;
-    const soliZuschlag = (soli === "ja" && bruttoLohnsteuer > 6500) ? lohnsteuer * 0.055 : 0;
-
-    const renten = bruttoSozial * 0.093;
-    const kranken = bruttoSozial * 0.089;
-    const arbeit = bruttoSozial * 0.012;
-    const pflegeV = bruttoSozial * (pflege === "ja" ? 0.01925 : 0.01525);
+    const renten = svEngineOutput.rvLaufend + svEngineOutput.rvEinmal;
+    const kranken = svEngineOutput.kvLaufend + svEngineOutput.kvEinmal;
+    const arbeit = svEngineOutput.avLaufend + svEngineOutput.avEinmal;
+    const pflegeV = svEngineOutput.pvLaufend + svEngineOutput.pvEinmal;
 
     const abzugSumme = lohnsteuer + kirchensteuer + soliZuschlag + renten + kranken + arbeit + pflegeV + vlEingabe + renteBetrieb;
-
-    const steuerfreiHaupt = parse(document.getElementById("steuerfreiHauptErgebnis")?.innerText || "0");
-    const steuerfreiSpringer = parse(document.getElementById("springerSteuerfrei")?.innerText || "0");
-
+    const steuerfreiHaupt = leseEuroWert("steuerfreiHauptErgebnis");
+    const steuerfreiSpringer = leseEuroWert("springerSteuerfrei");
     const jobradMonatlich = parseFloat(document.getElementById("jobradMonatlich")?.value?.replace(",", ".") || "0");
     const jobradZuschuss = jobradMonatlich * 0.67;
-
     const nettoEnd = bruttoSozial - abzugSumme + steuerfreiHaupt + steuerfreiSpringer + jobradZuschuss;
 
-    document.getElementById("abzDetailLohnsteuer").innerText = lohnsteuer.toFixed(2) + " €";
-    document.getElementById("abzDetailKirche").innerText = kirchensteuer.toFixed(2) + " €";
-    document.getElementById("abzDetailSoli").innerText = soliZuschlag.toFixed(2) + " €";
-    document.getElementById("abzDetailRente").innerText = renten.toFixed(2) + " €";
-    document.getElementById("abzDetailKV").innerText = kranken.toFixed(2) + " €";
-    document.getElementById("abzDetailAV").innerText = arbeit.toFixed(2) + " €";
-    document.getElementById("abzDetailPV").innerText = pflegeV.toFixed(2) + " €";
-    document.getElementById("abzDetailVL").innerText = vlEingabe.toFixed(2) + " €";
-    document.getElementById("abzDetailRenteBetrieb").innerText = renteBetrieb.toFixed(2) + " €";
-    document.getElementById("endNettoErgebnis").innerText = nettoEnd.toFixed(2) + " €";
+    return {
+        bruttoOriginal,
+        bruttoLohnsteuer,
+        bruttoSozial,
+        lohnsteuer,
+        kirchensteuer,
+        soliZuschlag,
+        soliEngine,
+        renten,
+        kranken,
+        arbeit,
+        pflegeV,
+        svEngineOutput,
+        svGesamtArbeitnehmer: svEngineOutput.svGesamtArbeitnehmer,
+        vlEingabe,
+        renteBetrieb,
+        steuerfreiHaupt,
+        steuerfreiSpringer,
+        jobradZuschuss,
+        abzugSumme,
+        nettoEnd
+    };
+}
+
+function zeigeAbzuegeDetail(ergebnis) {
+    if (!ergebnis?.abzuegeDetail) return;
+    const detail = ergebnis.abzuegeDetail;
+    schreibeEuro("abzDetailLohnsteuer", detail.lohnsteuer);
+    schreibeEuro("abzDetailKirche", detail.kirchensteuer);
+    schreibeEuro("abzDetailSoli", detail.soliZuschlag);
+    schreibeEuro("abzDetailRente", detail.renten);
+    schreibeEuro("abzDetailKV", detail.kranken);
+    schreibeEuro("abzDetailAV", detail.arbeit);
+    schreibeEuro("abzDetailPV", detail.pflegeV);
+    schreibeEuro("abzDetailVL", detail.vlEingabe);
+    schreibeEuro("abzDetailRenteBetrieb", detail.renteBetrieb);
+    schreibeEuro("abzDetailSVGesamt", detail.svGesamtArbeitnehmer);
+    schreibeEuro("endNettoErgebnis", detail.nettoEnd);
+    schreibeEuro("primaryAuszahlung", detail.nettoEnd);
+    schreibeEuro("primaryGesamtbrutto", leseEuroWert("gesamtBrutto"));
+    schreibeEuro("primaryGesamtabzuege", detail.abzugSumme);
+}
+
+const OUTPUT_RULES = Object.freeze({
+    primaryOnlyForExport: true,
+    primaryOnlyForStorage: true,
+    primaryOnlyForComparison: true
+});
+
+function getOfficialResult() {
+    if (!payrollCalculation && typeof calculatePayroll === "function") {
+        calculatePayroll();
+    }
+
+    const detail = payrollCalculation?.abzuegeDetail || {};
+    const steuer = payrollCalculation?.steuerEngine || {};
+
+    return Object.freeze({
+        type: "PRIMARY_OUTPUT",
+        source: "getOfficialResult",
+        rules: OUTPUT_RULES,
+        officialNetto: detail.nettoEnd || 0,
+        totalDeductions: detail.abzugSumme || 0,
+        grossTotal: leseEuroWert("gesamtBrutto"),
+        taxTotal: steuer.lohnsteuerGesamt || detail.lohnsteuer || 0,
+        churchTax: detail.kirchensteuer || 0,
+        solidarityTax: detail.soliZuschlag || 0,
+        pensionInsurance: detail.renten || 0,
+        healthInsurance: detail.kranken || 0,
+        unemploymentInsurance: detail.arbeit || 0,
+        careInsurance: detail.pflegeV || 0,
+        vlDeduction: detail.vlEingabe || 0,
+        companyPension: detail.renteBetrieb || 0,
+        generatedAt: new Date().toISOString()
+    });
+}
+
+function formatiereEuro(wert) {
+    return (wert || 0).toFixed(2) + " €";
+}
+
+function baueOfficialResultText(result) {
+    return [
+        "Offizielles Ergebnis (TVN Thüringen)",
+        "------------------------------------",
+        "Output-Typ: " + result.type,
+        "Quelle: " + result.source,
+        "",
+        "Gesamtbrutto: " + formatiereEuro(result.grossTotal),
+        "Offizielles Netto: " + formatiereEuro(result.officialNetto),
+        "Gesamtabzüge: " + formatiereEuro(result.totalDeductions),
+        "",
+        "Lohnsteuer gesamt: " + formatiereEuro(result.taxTotal),
+        "Kirchensteuer: " + formatiereEuro(result.churchTax),
+        "Soli: " + formatiereEuro(result.solidarityTax),
+        "Rentenversicherung: " + formatiereEuro(result.pensionInsurance),
+        "Krankenversicherung: " + formatiereEuro(result.healthInsurance),
+        "Arbeitslosenversicherung: " + formatiereEuro(result.unemploymentInsurance),
+        "Pflegeversicherung: " + formatiereEuro(result.careInsurance),
+        "VL-Abzug: " + formatiereEuro(result.vlDeduction),
+        "Betriebsrente: " + formatiereEuro(result.companyPension),
+        "",
+        "Regel: Nur dieser PRIMARY_OUTPUT darf exportiert, gespeichert oder verglichen werden."
+    ].join("\n");
+}
+
+let payrollToastTimer = null;
+
+function zeigePayrollToast(message, type = "info") {
+    const region = document.getElementById("toastRegion");
+    if (!region) return;
+
+    window.clearTimeout(payrollToastTimer);
+    region.innerHTML = "";
+
+    const toast = document.createElement("div");
+    toast.className = `payroll-toast ${type}`;
+    toast.textContent = message;
+    region.appendChild(toast);
+
+    payrollToastTimer = window.setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(16px)";
+        window.setTimeout(() => toast.remove(), 220);
+    }, 2400);
+}
+
+function setEngineStatus(id, text, state) {
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    element.textContent = text;
+    element.classList.toggle("running", state === "running");
+    element.classList.toggle("done", state === "done");
+}
+
+function setPayrollFeedbackRunning() {
+    setEngineStatus("steuerStatus", "Steuer läuft", "running");
+    setEngineStatus("svStatus", "SV läuft", "running");
+    setEngineStatus("jobradStatus", "JobRad läuft", "running");
+}
+
+function setPayrollFeedbackDone() {
+    setEngineStatus("steuerStatus", "Steuer berechnet", "done");
+    setEngineStatus("svStatus", "SV berechnet", "done");
+    setEngineStatus("jobradStatus", "JobRad berechnet", "done");
+}
+
+function animierePrimaryOutput() {
+    ["endNettoErgebnis", "primaryAuszahlung"].forEach(id => {
+        const metric = document.getElementById(id)?.closest(".primary-metric");
+        if (!metric) return;
+
+        metric.classList.remove("result-pop");
+        void metric.offsetWidth;
+        metric.classList.add("result-pop");
+    });
+}
+
+function runPayrollWithFeedback() {
+    zeigePayrollToast("Berechnung läuft", "info");
+    setPayrollFeedbackRunning();
+
+    window.setTimeout(() => {
+        try {
+            calculatePayroll();
+            setPayrollFeedbackDone();
+            animierePrimaryOutput();
+            zeigePayrollToast("Fertig berechnet", "success");
+            document.getElementById("abzugsBlock")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        } catch (error) {
+            zeigePayrollToast("Berechnung fehlgeschlagen", "error");
+            throw error;
+        }
+    }, 80);
+}
+
+function erstelleProductSection(id, title, subtitle, nodeIds, open = true) {
+    if (document.getElementById(id)) return;
+
+    const nodes = nodeIds
+        .map(nodeId => document.getElementById(nodeId))
+        .filter(Boolean);
+    if (nodes.length === 0) return;
+
+    const details = document.createElement("details");
+    details.id = id;
+    details.className = "product-layout-section";
+    if (open) details.open = true;
+
+    const summary = document.createElement("summary");
+    summary.innerHTML = `${title}<span class="product-section-subtitle">${subtitle}</span>`;
+
+    const content = document.createElement("div");
+    content.className = "product-section-content";
+
+    nodes[0].parentNode.insertBefore(details, nodes[0]);
+    details.appendChild(summary);
+    details.appendChild(content);
+
+    nodes.forEach(node => content.appendChild(node));
+}
+
+function initialisiereProductLayout() {
+    erstelleProductSection(
+        "inputStammdatenCard",
+        "1. Stammdaten & Eingruppierung",
+        "Tarif, EG, Monatsgehalt und Import",
+        ["kapitel-stammdaten", "eingruppierungBlock", "zuschlagssaetzeBlock"],
+        true
+    );
+
+    erstelleProductSection(
+        "inputZuschlaegeCard",
+        "2. Arbeitszeit, Zuschläge & laufende Zulagen",
+        "Arbeitszeiten, DF, EFZ, Urlaub und laufende Zuschläge",
+        ["kapitel-lohnbestandteile", "zuschlaegeBlock", "diensteWegeBlock", "schichtformBlock", "dfBlock", "efzBlock", "urlaubBlock", "zuschlagZusammenfassung"],
+        true
+    );
+
+    erstelleProductSection(
+        "inputSonderCard",
+        "3. Sonderzahlungen & Entgeltumwandlung",
+        "Einmalbezüge, VL, Betriebsrente, JobRad und Springer",
+        ["praemienKapitel", "praemienBlock", "kapitel-sonderabzuege", "vlBlock", "betriebsrenteBlock", "jobradNeuBlock", "springerBlock"],
+        true
+    );
+
+    erstelleProductSection(
+        "inputSteuerSvCard",
+        "4. Steuer- & SV-Merkmale",
+        "Steuerklasse, Bundesland, Kirche, KV und Pflegeversicherung",
+        ["kapitel-steuer-sv", "steuerdatenBlock"],
+        true
+    );
+}
+
+function aktualisiereTarifSidebar() {
+    const schreibe = (id, value) => {
+        const element = document.getElementById(id);
+        if (element) element.textContent = value || "–";
+    };
+
+    schreibe("sidebarTarifVersion", document.getElementById("aktiveTarifVersion")?.textContent?.trim());
+    schreibe("sidebarTarifQuelle", document.getElementById("aktiveTarifQuelle")?.textContent?.trim());
+    schreibe("sidebarTarifHerkunft", document.getElementById("tarifWerteHerkunft")?.textContent?.trim());
+}
+
+const STEUER_ENGINE_MODELL = Object.freeze({
+    activeMode: "progressiveApproximation",
+    availableModes: ["progressiveApproximation", "papReady"],
+    papReady: {
+        inputMapping: {
+            steuerjahr: "jahr",
+            steuerklasse: "steuerklasse",
+            laufenderArbeitslohn: "lstBruttoLaufend",
+            sonstigerBezug: "lstBruttoSonstig",
+            kinderfreibetraege: "kinderfreibetrag",
+            kirchensteuerMerkmal: "kirchensteuer",
+            bundesland: "bundesland",
+            kvZusatzbeitrag: "kvZusatzbeitrag",
+            pvKinderlos: "pflegeKinderlosFinal",
+            pvKinderAnzahl: "pvKinderAnzahlFinal"
+        },
+        outputMapping: {
+            lohnsteuerLaufend: "lohnsteuerLaufend",
+            lohnsteuerSonstig: "lohnsteuerSonstig",
+            lohnsteuerGesamt: "lohnsteuerGesamt",
+            solidaritaetszuschlag: "soliEngine.soliGesamt",
+            massstabsteuerKirche: "lohnsteuerGesamt"
+        }
+    }
+});
+
+function erstellePapBerechnungskontext() {
+    return {
+        mode: STEUER_ENGINE_MODELL.activeMode,
+        jahr: ermittleSteuerjahr(),
+        steuerklasse: document.getElementById("steuerklasse")?.value || "1",
+        bundesland: document.getElementById("bundesland")?.value || "",
+        kinderfreibetraege: leseKinderfreibetraege(),
+        kirchensteuerpflichtig: document.getElementById("kirchensteuer")?.value === "ja",
+        lstBruttoLaufend: leseEuroWert("lstBruttoLaufend"),
+        lstBruttoSonstig: leseEuroWert("lstBruttoSonstig"),
+        kvZusatzbeitrag: leseProzentInput("kvZusatzbeitrag", ermittleSvParameter().kvZusatzbeitragDefault),
+        pvStatus: lesePvStatus("detail")
+    };
+}
+
+function berechneProgressiveJahressteuer(jahresBrutto, profil) {
+    const basis = Math.max(0, jahresBrutto - profil.freibetrag);
+    const grenze1 = 12000;
+    const grenze2 = 32000;
+
+    if (basis <= grenze1) {
+        return basis * profil.satz1;
+    }
+    if (basis <= grenze2) {
+        return grenze1 * profil.satz1 + (basis - grenze1) * profil.satz2;
+    }
+    return grenze1 * profil.satz1 +
+        (grenze2 - grenze1) * profil.satz2 +
+        (basis - grenze2) * profil.satz3;
+}
+
+function berechneJahressteuer(jahresBrutto, steuerklasse) {
+    const profile = {
+        "1": { freibetrag: 13100, satz1: 0.14, satz2: 0.20, satz3: 0.25 },
+        "2": { freibetrag: 17360, satz1: 0.14, satz2: 0.20, satz3: 0.25 },
+        "4": { freibetrag: 13100, satz1: 0.14, satz2: 0.20, satz3: 0.25 },
+        "5": { freibetrag: 0, satz1: 0.18, satz2: 0.26, satz3: 0.32 },
+        "6": { freibetrag: 0, satz1: 0.22, satz2: 0.28, satz3: 0.36 }
+    };
+
+    if (steuerklasse === "3") {
+        const halbesJahr = jahresBrutto / 2;
+        return rundeCent(berechneProgressiveJahressteuer(halbesJahr, profile["1"]) * 2);
+    }
+
+    return rundeCent(berechneProgressiveJahressteuer(jahresBrutto, profile[steuerklasse] || profile["1"]));
+}
+
+function berechneSteuerEngine() {
+    const steuerklasse = document.getElementById("steuerklasse")?.value || "1";
+    const lstBruttoLaufend = parseEuroWert(leseElementText("lstBruttoLaufend"));
+    const lstBruttoSonstig = parseEuroWert(leseElementText("lstBruttoSonstig"));
+
+    const jahresBruttoLaufend = lstBruttoLaufend * 12;
+    const jahressteuerOhneSonderzahlung = berechneJahressteuer(jahresBruttoLaufend, steuerklasse);
+    const jahressteuerMitSonderzahlung = berechneJahressteuer(jahresBruttoLaufend + lstBruttoSonstig, steuerklasse);
+
+    const lohnsteuerLaufend = rundeCent(jahressteuerOhneSonderzahlung / 12);
+    const lohnsteuerSonstig = rundeCent(Math.max(0, jahressteuerMitSonderzahlung - jahressteuerOhneSonderzahlung));
+    const lohnsteuerGesamt = rundeCent(lohnsteuerLaufend + lohnsteuerSonstig);
+
+    document.getElementById("lohnsteuerLaufend").innerText = lohnsteuerLaufend.toFixed(2) + " €";
+    document.getElementById("lohnsteuerSonstig").innerText = lohnsteuerSonstig.toFixed(2) + " €";
+    document.getElementById("lohnsteuerGesamt").innerText = lohnsteuerGesamt.toFixed(2) + " €";
+
+    return {
+        lohnsteuerLaufend,
+        lohnsteuerSonstig,
+        lohnsteuerGesamt,
+        jahressteuerOhneSonderzahlung,
+        jahressteuerMitSonderzahlung,
+        steuerModell: STEUER_ENGINE_MODELL.activeMode,
+        papKontext: erstellePapBerechnungskontext()
+    };
+}
+
+function berechneAbzuegeDetail() {
+    zeigeAbzuegeDetail(payrollCalculation);
+}
+
+function calculatePayroll() {
+    if (payrollCalculationRunning) return payrollCalculation;
+    payrollCalculationRunning = true;
+
+    try {
+        if (typeof zeigeEingruppierungWerte === "function") zeigeEingruppierungWerte();
+        if (typeof berechneZuschlaege === "function") berechneZuschlaege();
+        if (typeof berechneDiensteZuschlaege === "function") berechneDiensteZuschlaege();
+        if (typeof berechneSchichtform === "function") berechneSchichtform();
+        if (typeof berechneDFZuschlag === "function") berechneDFZuschlag();
+        if (typeof berechneEFZZuschlag === "function") berechneEFZZuschlag();
+        if (typeof berechneUrlaubZuschlag === "function") berechneUrlaubZuschlag();
+        if (typeof berechnePraemienBlock === "function") berechnePraemienBlock();
+        if (typeof berechneZuschlagsGesamtsumme === "function") berechneZuschlagsGesamtsumme();
+        if (typeof aktualisiereVLBetrag === "function") aktualisiereVLBetrag();
+        if (typeof berechneJobradSachbezug === "function") berechneJobradSachbezug();
+        if (typeof setzeSpringerStundenlohn === "function") setzeSpringerStundenlohn();
+        if (typeof berechneSpringerZuschlaege === "function") berechneSpringerZuschlaege();
+
+        if (typeof berechneGesamtbrutto === "function") berechneGesamtbrutto();
+        if (typeof berechneBetriebsrente === "function") berechneBetriebsrente();
+        if (typeof berechneJobradNeu === "function") berechneJobradNeu();
+        if (typeof berechneJobradMitSachbezug === "function") berechneJobradMitSachbezug();
+        if (typeof berechneSpringerSteuerfrei === "function") berechneSpringerSteuerfrei();
+        if (typeof berechneBereinigtesBrutto === "function") berechneBereinigtesBrutto();
+        if (typeof berechneSteuerfreiHaupt === "function") berechneSteuerfreiHaupt();
+        if (typeof berechneSteuerpflichtigBrutto === "function") berechneSteuerpflichtigBrutto();
+
+        const steuerEngine = (typeof berechneSteuerEngine === "function")
+            ? berechneSteuerEngine()
+            : { lohnsteuerGesamt: 0 };
+
+        const jobrad = (typeof berechneJobradEngine === "function")
+            ? berechneJobradEngine()
+            : null;
+        const svPreview = berechneSvEngine("preview");
+        const svDetail = berechneSvEngine("detail");
+
+        payrollCalculation = {
+            steuerEngine,
+            jobrad,
+            svOutput: svDetail,
+            netto: berechneNettoWerte(steuerEngine, svPreview),
+            abzuegeDetail: berechneAbzuegeDetailWerte(steuerEngine, svDetail)
+        };
+
+        berechneNetto();
+        berechneAbzuegeDetail();
+
+        return payrollCalculation;
+    } finally {
+        payrollCalculationRunning = false;
+    }
 }
 </script>
 <script>
 window.onload = function() {
-    if (typeof berechneZuschlagGesamt === "function") berechneZuschlagGesamt();
-    if (typeof berechneBereinigtesBrutto === "function") berechneBereinigtesBrutto();
-    if (typeof berechneSteuerpflichtigBrutto === "function") berechneSteuerpflichtigBrutto();
-    if (typeof berechneAbzuegeDetail === "function") berechneAbzuegeDetail();
+    if (typeof initialisiereProductLayout === "function") initialisiereProductLayout();
+    if (typeof calculatePayroll === "function") calculatePayroll();
 };
 </script>
-<div style="margin-top: 40px; padding: 20px; border-top: 2px solid #ccc; text-align: center;">
+<div class="footer-actions" style="margin-top: 40px; padding: 20px; border-top: 2px solid #ccc; text-align: center;">
 <button onclick="resetFormulare()" style="background-color:#c62828; color:white; border:none; padding:12px 24px; font-size:1em; border-radius:6px; margin: 0 10px;">
     Alle Eingaben löschen
   </button>
-<button onclick="window.print()" style="background-color:#0277bd; color:white; border:none; padding:12px 24px; font-size:1em; border-radius:6px; margin: 0 10px;">
-  Als PDF speichern
+<button onclick="printOfficialResult()" style="background-color:#0277bd; color:white; border:none; padding:12px 24px; font-size:1em; border-radius:6px; margin: 0 10px;">
+  Offizielles Ergebnis als PDF speichern
 </button>
 <button onclick="mailtoExport()" style="background-color:#00695c; color:white; border:none; padding:12px 24px; font-size:1em; border-radius:6px; margin: 0 10px;">
-  Ergebnis per Outlook senden
+  Offizielles Ergebnis per Outlook senden
 </button>
 <script>
 function mailtoExport() {
+  const result = getOfficialResult();
   const body = encodeURIComponent(
-    "Hiermit sende ich mein Ergebnis aus dem Brutto-/Netto-Rechner auf Grundlage des TVN-Thüringen.%0D%0A%0D%0ABitte beachten Sie, dass die vollständigen Werte im PDF-Dokument enthalten sind."
+    baueOfficialResultText(result).replace(/\n/g, "\r\n")
   );
   window.location.href = "mailto:?subject=Nettolohn-Ergebnis TVN&body=" + body;
+}
+
+function printOfficialResult() {
+  const result = getOfficialResult();
+  const text = baueOfficialResultText(result)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  const printWindow = window.open("", "_blank");
+  if (!printWindow) return;
+  printWindow.document.write(
+    "<!doctype html><html><head><title>Offizielles Nettolohn-Ergebnis</title>" +
+    "<style>body{font-family:sans-serif;padding:24px;line-height:1.45;}pre{white-space:pre-wrap;font-size:14px;}</style>" +
+    "</head><body><pre>" + text + "</pre></body></html>"
+  );
+  printWindow.document.close();
+  printWindow.focus();
+  printWindow.print();
 }
 </script>
 </div>
@@ -1055,40 +3692,15 @@ function resetFormulare() {
   });
 }
 </script>
-<div style="margin-top: 40px; padding: 20px; border-top: 2px solid #ccc;">
+<div class="footer-actions" style="margin-top: 40px; padding: 20px; border-top: 2px solid #ccc;">
 <button onclick="exportiereText()" style="background-color:#455a64; color:white; border:none; padding:12px 24px; font-size:1em; border-radius:6px;">
-    Alle berechneten Werte als Text anzeigen
+    Offizielles Ergebnis als Text anzeigen
   </button>
 <textarea id="exportTextfeld" style="width:100%; height:240px; margin-top:16px; display:none; font-family:monospace; font-size:0.95em;"></textarea>
 </div>
 <script>
 function exportiereText() {
-  const parse = id => {
-    const el = document.getElementById(id);
-    return el ? el.innerText.trim() : "–";
-  };
-
-  const text = [
-    "Berechnungsergebnis (TVN Thüringen):",
-    "------------------------------------",
-    "Gesamt-Brutto: " + parse("gesamtBrutto"),
-    "Bereinigtes Brutto: " + parse("gesamtBereinigt"),
-    "Steuerfreie Zuschläge (Haupttätigkeit): " + parse("steuerfreiHauptErgebnis"),
-    "Steuerfreie Springerzuschläge: " + parse("springerSteuerfrei"),
-    "Steuerpflichtiges Brutto: " + parse("steuerpflichtigBrutto"),
-    "",
-    "Lohnsteuer: " + parse("abzDetailLohnsteuer"),
-    "Kirchensteuer: " + parse("abzDetailKirche"),
-    "Soli: " + parse("abzDetailSoli"),
-    "Rente: " + parse("abzDetailRente"),
-    "KV: " + parse("abzDetailKV"),
-    "AV: " + parse("abzDetailAV"),
-    "PV: " + parse("abzDetailPV"),
-    "VL-Abzug: " + parse("abzDetailVL"),
-    "Betriebsrente: " + parse("abzDetailRenteBetrieb"),
-    "",
-    "Endgültiges Netto: " + parse("endNettoErgebnis")
-  ].join("\n");
+  const text = baueOfficialResultText(getOfficialResult());
 
   const feld = document.getElementById("exportTextfeld");
   feld.style.display = "block";
@@ -1194,10 +3806,10 @@ function berechneJobradSachbezug() {
 }
 </script><script>
 function berechneJobradMitSachbezug() {
-  const brutto = parseFloat(document.getElementById("gesamtBrutto")?.innerText.replace(" €", "").replace(",", ".") || "0");
+  const brutto = parseFloat(leseElementText("gesamtBrutto").replace(" €", "").replace(",", ".") || "0");
   const jobrad = parseFloat(document.getElementById("jobradAbzug")?.value || "0");
   const agZuschuss = parseFloat(document.getElementById("jobradAGZuschuss")?.value || "0");
-  const sachbezug = parseFloat(document.getElementById("sachbezugJobrad")?.innerText.replace(" €", "").replace(",", ".") || "0");
+  const sachbezug = parseFloat(leseElementText("sachbezugJobrad").replace(" €", "").replace(",", ".") || "0");
   const result = brutto - jobrad + agZuschuss + sachbezug;
   document.getElementById("jobradBruttoMitSachbezug").innerText = result.toFixed(2) + " €";
 }
